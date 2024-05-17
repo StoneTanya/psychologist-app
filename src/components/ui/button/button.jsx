@@ -1,6 +1,7 @@
 // import styles from './style.module.css';
 
-function Footer() {
+function Button() {
   return <></>
 }
-export default Footer;
+
+export default Button;

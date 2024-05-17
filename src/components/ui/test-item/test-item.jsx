@@ -1,6 +1,6 @@
 // import styles from './style.module.css';
 
-function Footer() {
+function TestItem() {
   return <></>
 }
-export default Footer;
+export default TestItem;

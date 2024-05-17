@@ -1,6 +1,6 @@
 // import styles from './style.module.css';
 
-function Footer() {
+function Nav() {
   return <></>
 }
-export default Footer;
+export default Nav;
