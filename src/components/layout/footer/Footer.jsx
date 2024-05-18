@@ -1,6 +1,6 @@
 // import styles from './style.module.css';
 
 function Footer() {
-  return <></>
+  return <></>;
 }
 export default Footer;

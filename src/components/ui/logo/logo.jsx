@@ -1,4 +1,8 @@
 function Logo() {
-  return <></>
+  return (
+    <>
+      <a href="#">LOGO</a>
+    </>
+  );
 }
 export default Logo;
