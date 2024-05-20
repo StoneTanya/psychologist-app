@@ -1,7 +1,11 @@
+// import {ReactComponent as LogoImage} from '/src/assets/logo.svg';
+/* закомментирован пока нерабочий код с Лого */
+
 function Logo() {
   return (
     <>
-      <a href="#">LOGO</a>
+    /*  <LogoImage/> */
+      <a href="#" target="blank">@pavlyuts_pro</a>
     </>
   );
 }
