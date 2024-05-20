@@ -3,6 +3,7 @@ import Logo from "../../ui/logo/logo";
 import Title from "../../ui/title/title";
 import styles from "./style.module.css";
 import mainPhoto from "../../../assets/img/main-photo.jpg";
+import { TitleSize } from "../../ui/title/util";
 
 function Header() {
   return (
@@ -13,11 +14,8 @@ function Header() {
       </div>
       <div className={styles["header__wrapper"]}>
         <div className={styles["header__content"]}>
-          <Title text={"Меня зовут Яна Павлюц"} />
-          <h2>
-            я психолог-консультант
-            <br />в сексологии
-          </h2>
+          <Title>Яна Павлюц</Title>
+          <Title size={TitleSize.BIG}>психолог-консультант в сексологии</Title>
         </div>
         <div className={styles["header__img"]}>
           <img src={mainPhoto} alt="" />
