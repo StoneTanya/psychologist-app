@@ -4,7 +4,7 @@
 function Logo() {
   return (
     <>
-    /*  <LogoImage/> */
+    {/*  <LogoImage/> */}
       <a href="#" target="blank">@pavlyuts_pro</a>
     </>
   );
