@@ -4,18 +4,12 @@
   color: var(--accent-color);
 }*/
 
-:root {
-  --basic-color: rgb(217, 186, 154);
-  --accent-color: rgb(79, 160, 251);
-  --white-color: rgb(255, 255, 255);
-  --black-color: rgb(0, 0, 0);
-  --accent-font-family: Inter;         /*пока что условное значение*/
+@import 'variables.css';
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  font-family: var(--main-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: rgb(36, 36, 36);
-
   max-width: 1280px;
   margin: 0 auto;
 }

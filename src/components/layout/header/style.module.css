@@ -1,8 +1,10 @@
+@import '../../../assets/styles/variables.css';
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--basic-color);
+  background-color: var(--base-color);
   padding: 0 4em;
 }
 
