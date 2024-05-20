@@ -1,3 +1,17 @@
-.h1 {
-  font-weight: 400;
+/* точные значения (цвет, размер в относительных единицах) будут указаны после утверждения макета */
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+:global .title_small {
+  font-size: 28px;
+}
+
+:global .title_big {
+  font-size: 44px;
 }
