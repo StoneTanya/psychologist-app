@@ -1,13 +1,7 @@
-/*значения будут заполнены после утверждения стилей */
-/*кастомные значения (переменные) доступны и применимы в любом компоненте приложения, пример:
-.h1 {
-  color: var(--accent-color);
-}*/
-
 @import 'variables.css';
 
 :root {
-  font-family: var(--main-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-base), Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   max-width: 1280px;
