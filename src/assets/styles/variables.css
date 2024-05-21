@@ -1,0 +1,14 @@
+:root {
+  --base-background-color: rgba(237, 214, 190, 0.20);
+  --accent-color: rgb(79, 160, 251);
+  --secondary-color: rgb(120, 98, 47);
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --highlight-color: rgb(120, 98, 47);
+  --footer-background-color: rgb(237, 214, 190);
+  --modal-background-color: rgba(84, 174, 255, 0.70);
+  --text-color-base: rgb(34, 34, 15);
+
+  --font-family-titles: Inter;
+  --font-family-base: Montserrat;
+}

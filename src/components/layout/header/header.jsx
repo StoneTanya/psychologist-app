@@ -16,7 +16,7 @@ function Header() {
             <Logo />
             <Nav />
           </div>
-          <div className={styles['header__wrapper-hidden']}>
+          <div className={styles['header__wrapper']}>
             <div className={styles['header__content']}>
               <Title>Яна Павлюц</Title>
               <Title size={TitleSize.BIG}>психолог-консультант в сексологии</Title>
