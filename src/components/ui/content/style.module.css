@@ -1,0 +1,16 @@
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: var(--space-l);
+  padding-left: var(--space-l);
+
+  @media (max-width: 1000px) {
+    padding-right: var(--space-m);
+    padding-left: var(--space-m);
+  }
+  @media (max-width: 500px) {
+    padding-right: var(--space-s);
+    padding-left: var(--space-s);
+  }
+}
