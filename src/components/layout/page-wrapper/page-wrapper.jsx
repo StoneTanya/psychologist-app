@@ -1,14 +1,14 @@
 import Header from '../header/header';
-import Footer from '../footer/footer';
 import MainPage from '../../pages/main-page/main-page';
-// import styles from './style.module.css';
+import styles from './style.module.css';
 
 function PageWrapper() {
   return (
     <>
+    <div className='container'>
       <Header />
       <MainPage />
-      <Footer />
+      </div>
     </>
   );
 }
