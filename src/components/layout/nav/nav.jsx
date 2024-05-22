@@ -1,34 +1,18 @@
 import styles from './style.module.css';
 
 function Nav() {
+  const navList = ['Обо мне', 'Консультации', 'Оплата', 'Вопрос-ответ', 'Тесты'];
+
   return (
-    <nav className={styles['menu']}>
-      <ul className={styles['menu__list']}>
-        <li className={styles['menu__item']}>
-          <a href="#" className={styles['menu__link']}>
-            Обо мне
-          </a>
-        </li>
-        <li className={styles['menu__item']}>
-          <a href="#" className={styles['menu__link']}>
-            Консультации
-          </a>
-        </li>
-        <li className={styles['menu__item']}>
-          <a href="#" className={styles['menu__link']}>
-            Оплата
-          </a>
-        </li>
-        <li className={styles['menu__item']}>
-          <a href="#" className={styles['menu__link']}>
-            Вопрос-Ответ
-          </a>
-        </li>
-        <li className={styles['menu__item']}>
-          <a href="#" className={styles['menu__link']}>
-            Тесты
-          </a>
-        </li>
+    <nav className={styles.menu}>
+      <ul className={styles.menu__list}>
+        {navList.map((nav, navId) => (
+          <li key={navId} className={styles.menu__item}>
+            <a href="#" className={styles.menu__link}>
+              {nav}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
