@@ -8,16 +8,18 @@ import { TitleSize, TitleLevel } from '../../../utils/consts';
 
 function Header() {
   return (
-    <header className={styles['header']}>
+    <header className="wrapper">
       <Container>
         <div className={styles['header__top']}>
           <Logo />
           <Nav />
         </div>
-        <div className={styles['header__wrapper-hidden']}>
+        <div className={styles['header__wrapper']}>
           <div className={styles['header__content']}>
             <Title level={TitleLevel.H3}>Яна Павлюц</Title>
-            <Title level={TitleLevel.H1} size={TitleSize.BIG}>психолог-консультант в сексологии</Title>
+            <Title level={TitleLevel.H1} size={TitleSize.BIG}>
+              психолог-консультант в сексологии
+            </Title>
           </div>
           <div className={styles['header__img']}>
             <img src={headerPhoto} alt="" />
