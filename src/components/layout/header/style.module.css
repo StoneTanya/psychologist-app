@@ -1,9 +1,5 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--base-background-color);
-  padding: 0 4em;
 }
 
 .header__top {
