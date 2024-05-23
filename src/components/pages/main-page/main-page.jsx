@@ -1,3 +1,4 @@
+import Intro from '../../blocks/intro/intro';
 import About from '../../blocks/about/about';
 import Consultation from '../../blocks/consultations/consultations';
 import Payment from '../../blocks/payment/payment';
@@ -8,6 +9,7 @@ import TestList from '../../blocks/test-list/test-list';
 function MainPage() {
   return (
     <>
+      <Intro />
       <About />
       <Consultation />
       <Payment />
