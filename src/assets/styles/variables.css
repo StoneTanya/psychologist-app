@@ -1,14 +1,19 @@
 :root {
-  --base-background-color: rgba(237, 214, 190, 0.20);
+  --base-background-color: rgba(237, 214, 190, 0.2);
   --accent-color: rgb(79, 160, 251);
   --secondary-color: rgb(120, 98, 47);
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(0, 0, 0);
   --highlight-color: rgb(120, 98, 47);
   --footer-background-color: rgb(237, 214, 190);
-  --modal-background-color: rgba(84, 174, 255, 0.70);
+  --modal-background-color: rgba(84, 174, 255, 0.7);
   --text-color-base: rgb(34, 34, 15);
-
-  --font-family-titles: Inter;
+  --link-color: rgb(84, 152, 214);
+  --text-size-base: 1.7rem;
+  --font-family-titles: Mont;
   --font-family-base: Montserrat;
+
+  --space-s: 5px;
+  --space-m: 12px;
+  --space-l: 24px;
 }
