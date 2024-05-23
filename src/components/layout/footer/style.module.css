@@ -1,0 +1,25 @@
+.footer {
+  background-color: #edd6be;
+  padding: 2rem 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer__wrapper p {
+  margin: 0;
+}
+
+.footer__icon {
+  height: 30px;
+}
+
+.footer__logo:hover,
+.footer__createdby:hover {
+  color: var(--accent-color);
+}
