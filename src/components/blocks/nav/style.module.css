@@ -10,3 +10,12 @@ a {
   font-weight: 700;
   font-size: 1.8rem;
 }
+
+nav::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--highlight-color);
+  margin: 10px auto 0;
+}
