@@ -1,0 +1,6 @@
+.form__link {
+  background-color: var(--highlight-color);
+  &:hover {
+    background-color: rgb(120, 98, 47, 0.7);
+  }
+}

@@ -14,3 +14,7 @@ export const TitleLevel = {
   H5: '5',
   H6: '6',
 };
+
+export const TelegramLink = 'https://t.me/pavlyuts_pro';
+
+export const FormLink = 'https://forms.yandex.ru/u/664276fa068ff0bae523d121/';

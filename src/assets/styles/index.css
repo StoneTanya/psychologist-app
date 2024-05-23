@@ -1,13 +1,24 @@
 @import 'variables.css';
 
-:root {
-  --space-s: 5px;
-  --space-m: 12px;
-  --space-l: 24px;
+@font-face {
+  font-family: 'Mont';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Mont/mont_extralightdemo.ttf');
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+:root {
   font-family: var(--font-family-base), Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 10px;
 }
 
 body {

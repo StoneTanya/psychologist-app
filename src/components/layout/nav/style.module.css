@@ -1,5 +1,5 @@
 a {
-  color: inherit;
+  color: var(--highlight-color);
   text-decoration: none;
 }
 
@@ -8,4 +8,5 @@ a {
   align-items: center;
   gap: 0 40px;
   font-weight: 700;
+  font-size: 1.8rem;
 }
