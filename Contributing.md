@@ -29,7 +29,7 @@ git push
 ¹ В `psycho` должна быть ссылка на master-репозиторий. Если ее там нет, добавьте:
 
 ```
-git remote add psycho HTTPS- или SSH-адрес вашего форка
+git remote add psycho HTTPS- или SSH-адрес master-репозитория
 ```
 </aside>
 

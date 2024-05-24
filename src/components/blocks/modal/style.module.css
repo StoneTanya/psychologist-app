@@ -1,0 +1,87 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 225, 197, 0.677);
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  transition: opacity 0.3s;
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  width: 85%;
+  min-width: 320px;
+  max-width: 500px;
+  background-color: var(--modal-background-color);
+  padding: 3% 2%;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow:
+    0 15px 20px rgba(0, 0, 0, 0.22),
+    0 19px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-50px);
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  font-size: 1.5rem;
+  color: var(--black-color);
+}
+
+.age {
+  top: 8%;
+  left: 13%;
+  max-width: 42px;
+  max-height: 40px;
+  position: absolute;
+}
+
+.modal__image {
+  max-width: 100%;
+  height: auto;
+}
+.modal__title {
+  font-size: 2rem;
+  font-family: var(--font-family-titles-bold);
+}
+
+.button__yes,
+.button__no,
+.button__back {
+  font-size: 1.6rem;
+  color: var(--black-color);
+  font-family: var(--font-family-titles);
+  font-weight: bolder;
+}
+
+.button__yes,
+.button__back {
+  background-color: var(--white-color);
+  &:hover {
+    background: var(--footer-background-color);
+  }
+}
+
+.button__no {
+  background: none;
+}
+
+.cookie_notification {
+  font-size: 1.2rem;
+}

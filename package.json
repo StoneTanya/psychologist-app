@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "js-cookie": "^3.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -25,6 +26,7 @@
     "prettier": "3.2.5",
     "vite": "^5.2.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-stylelint": "^5.3.1"
+    "vite-plugin-stylelint": "^5.3.1",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }

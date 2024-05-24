@@ -1,9 +1,7 @@
 import PageWrapper from '../layout/page-wrapper/page-wrapper';
 
 function App() {
-  return (
-    <PageWrapper />
-  )
+  return <PageWrapper />;
 }
 
 export default App;

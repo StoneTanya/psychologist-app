@@ -1,12 +1,12 @@
 import styles from './style.module.css';
 
-function Button({ children, link, className='' }) {
+function Button({ children, link, className = '', handler = {} }) {
   return link ? (
     <a className={`${styles.button} ${className}`} href={link} target="blank">
       {children}
     </a>
   ) : (
-    <button type="button" className={`${styles.button} ${className}`}>
+    <button type="button" className={`${styles.button} ${className}`} onClick={handler}>
       {children}
     </button>
   );
