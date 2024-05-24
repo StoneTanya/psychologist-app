@@ -1,0 +1,32 @@
+.method__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: var(--text-size-base);
+}
+
+.method__img {
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.method__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.method__content {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 5rem;
+}
+
+.method__highlight {
+  font-family: var(--font-family-titles);
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 4rem;
+}
