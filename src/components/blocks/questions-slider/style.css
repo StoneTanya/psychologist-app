@@ -1,0 +1,45 @@
+/* Используется для переопределения классов слайдера */
+
+.swiper {
+  position: initial;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-button-next {
+  background-image: url('../../../assets/img/quistions-slider/next.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  right: -5px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url('../../../assets/img/quistions-slider/back.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  left: -5px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}

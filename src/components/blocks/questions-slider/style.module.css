@@ -1,0 +1,33 @@
+.questions {
+  background-color: var(--base-background-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  padding: var(--space-xl);
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper {
+  padding-bottom: 40px;
+  width: 90%;
+  margin: 0 auto;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
