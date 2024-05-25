@@ -5,6 +5,7 @@ import Payment from '../../blocks/payment/payment';
 import UserForm from '../../blocks/user-form/user-form';
 import TestList from '../../blocks/test-list/test-list';
 import WorkMethod from '../../blocks/work-method/work-method';
+import QuestionsSlider from '../../blocks/questions-slider/questions-slider';
 // import styles from './style.module.css';
 
 function MainPage() {
@@ -16,6 +17,7 @@ function MainPage() {
       <WorkMethod />
       <Payment />
       <UserForm />
+      <QuestionsSlider />
       <TestList />
     </>
   );
