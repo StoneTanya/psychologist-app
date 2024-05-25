@@ -23,3 +23,7 @@
 .footer__createdby:hover {
   color: var(--accent-color);
 }
+
+.footer__copyright {
+  font-size: 1.2rem;
+}

@@ -17,11 +17,12 @@ function Footer() {
           <a href="/">
             <Logo className={styles.footer__logo} />
           </a>
-          <p>
-            Сайт разработан{' '}
+          <p className={styles.footer__copyright}>
+            <span>&copy; </span> Created by{' '}
             <a className={styles.footer__createdby} href="https://itgirlschool.com/">
-              ITGirls
-            </a>
+              ITGirls,
+            </a>{' '}
+            <span>2024 </span>
           </p>
         </div>
       </Container>

@@ -18,7 +18,7 @@ function Intro() {
               Яна Павлюц
             </Title>
             <Title level={TitleLevel.H1} size={TitleSize.BIG}>
-              психолог-консультант в сексологии
+              психолог - консультант в сексологии
             </Title>
             <Button link={TelegramLink}>Записаться</Button>
           </div>

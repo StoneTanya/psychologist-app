@@ -3,14 +3,16 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: var(--text-size-base);
+  gap: 5rem;
 }
 
 .method__img {
-  max-width: 50%;
+  max-width: 45%;
   overflow: hidden;
 }
 
 .method__img img {
+  display: block;
   width: 100%;
   object-fit: cover;
 }
@@ -20,7 +22,6 @@
   flex-basis: 50%;
   flex-direction: column;
   height: 100%;
-  padding: 0 5rem;
 }
 
 .method__highlight {
