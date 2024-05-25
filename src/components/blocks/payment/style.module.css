@@ -1,0 +1,7 @@
+.payment__button {
+  max-width: 220px;
+
+  @media (min-width: 451px) and (max-width: 1200px) {
+    max-width: 380px;
+  }
+}
