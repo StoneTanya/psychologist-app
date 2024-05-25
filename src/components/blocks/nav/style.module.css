@@ -9,7 +9,7 @@ a {
   flex-wrap: wrap;
   gap: 0 40px;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: var(--text-size-base);
 }
 
 nav::after {
