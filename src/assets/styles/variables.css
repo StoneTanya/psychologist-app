@@ -6,6 +6,7 @@
   --black-color: rgb(0, 0, 0);
   --highlight-color: rgb(120, 98, 47);
   --footer-background-color: rgb(237, 214, 190);
+  --block-background-color: rgba(237, 214, 190, 0.25);
   --modal-background-color: rgb(105, 181, 248);
   --text-color-base: rgb(34, 34, 15);
   --link-color: rgb(84, 152, 214);
@@ -18,6 +19,7 @@
   --space-m: 12px;
   --space-l: 24px;
   --space-xl: 30px;
+  --space-xxl: 40px;
 
   --border-radius-m: 24px;
 }
