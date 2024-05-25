@@ -3,6 +3,7 @@ import MainPage from '../../pages/main-page/main-page';
 import Footer from '../footer/footer';
 import Modal from '../../blocks/modal/modal';
 import styles from './style.module.css';
+import ScrollToTop from '../../ui/scroll-top/scroll-top';
 
 function PageWrapper() {
   return (
@@ -13,6 +14,7 @@ function PageWrapper() {
         <MainPage />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
