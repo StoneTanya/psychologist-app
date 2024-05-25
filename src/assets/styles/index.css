@@ -39,11 +39,3 @@ body {
   box-sizing: border-box;
 }
 
-/*! глобальный класс, который отвечает за заливку background, добавляется к тегу вне контейнера, чтобы заполнить цветом всю видимую область */
-.wrapper {
-  background-color: var(--base-background-color);
-}
-
-.modal_open {
-  overflow: hidden;
-}

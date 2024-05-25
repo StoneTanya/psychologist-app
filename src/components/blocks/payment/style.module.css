@@ -1,3 +1,7 @@
+.payment {
+  background-color: var(--base-background-color);
+}
+
 .payment__button {
   max-width: 220px;
 

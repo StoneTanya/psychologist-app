@@ -7,7 +7,7 @@ import styles from './style.module.css';
 
 function Intro() {
   return (
-    <section className="wrapper">
+    <section className={styles.intro}>
       <Container>
         <div className={styles.intro__wrapper}>
           <div className={styles.intro__img}>
