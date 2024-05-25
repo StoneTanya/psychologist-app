@@ -1,8 +1,8 @@
 .tests {
   font-size: var(--text-size-base);
   background-color: var(--white-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: calc(2 * var(--space-xxl));
+  padding-bottom: calc(2 * var(--space-xxl));
 }
 
 .tests__link {
