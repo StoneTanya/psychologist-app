@@ -1,10 +1,10 @@
+import { navList } from './route';
 import styles from './style.module.css';
 
-function Nav() {
-  const navList = ['Обо мне', 'Консультации', 'Оплата', 'Вопрос-ответ', 'Тесты'];
-
+function NavDesktop() {
   return (
-    <nav className={styles.menu}>
+    <>
+    <nav className={styles.nav__desktop}>
       <ul className={styles.menu__list}>
         {navList.map((nav, navId) => (
           <li key={navId} className={styles.menu__item}>
@@ -15,6 +15,7 @@ function Nav() {
         ))}
       </ul>
     </nav>
+    </>
   );
 }
-export default Nav;
+export default NavDesktop;
