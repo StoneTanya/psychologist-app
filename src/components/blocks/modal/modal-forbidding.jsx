@@ -1,13 +1,16 @@
 import styles from './style.module.css';
 import Button from '../../ui/button/button';
+import { useTranslation } from 'react-i18next';
 
 function ModalForbidding({ isBack }) {
+  const { t } = useTranslation();
+
   return (
     <>
-      <span className={styles.modal__title}>Буду ждать тебя позже!</span>
-      <p>Сайт содержит информацию, предназначенную только для лиц старше 18 лет. </p>
+      <span className={styles.modal__title}>{t('modalCheck.forbidden.title')}</span>
+      <p>{t('modalCheck.forbidden.description')}</p>
       <Button className={styles.button__back} handler={() => isBack()}>
-        Назад
+        {t('modalCheck.forbidden.back')}
       </Button>
     </>
   );

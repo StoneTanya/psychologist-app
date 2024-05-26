@@ -1,7 +1,16 @@
 import styles from './style.module.css';
+import { useTranslation } from 'react-i18next';
 
 function Nav() {
-  const navList = ['Обо мне', 'Консультации', 'Оплата', 'Вопрос-ответ', 'Тесты'];
+  // const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  // смена языка
+  // const changeLanguage = (language) => {
+  //   i18n.changeLanguage(language);
+  // };
+
+  const navList = t('nav.links', { returnObjects: true });
 
   return (
     <nav className={styles.menu}>
@@ -14,6 +23,8 @@ function Nav() {
           </li>
         ))}
       </ul>
+      {/* <button onClick={() => changeLanguage('en')}>EN</button>
+      <button onClick={() => changeLanguage('ru')}>RU</button> */}
     </nav>
   );
 }

@@ -63,3 +63,7 @@
     text-align: center;
   }
 }
+
+.title {
+  text-transform: uppercase;
+}

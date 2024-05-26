@@ -1,22 +1,23 @@
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel } from '../../../utils/consts';
-import dataList from './data';
-
+import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
 function Consultations() {
-  const lists = dataList();
+  const { t } = useTranslation();
+  const canHelp = t('consultations.lists.canHelp', { returnObjects: true });
+  const notWork = t('consultations.lists.notWork', { returnObjects: true });
 
   return (
     <section className={styles.consult}>
       <Container>
         <Title level={TitleLevel.H2} className={styles.title}>
-          С какими запросами я могу помочь:
+          {t('consultations.title')}
         </Title>
 
         <div className={styles.blocks}>
-          {lists.canHelp.map((block, index) => (
+          {canHelp.map((block, index) => (
             <div key={index} className={`${styles.block} ${styles.block_fill}`}>
               {block.map((item, id) => (
                 <li key={id} className={styles.item}>
@@ -28,11 +29,11 @@ function Consultations() {
         </div>
 
         <Title level={TitleLevel.H3} className={styles.subtitle}>
-          С какими запросами не работаю:
+          {t('consultations.title2')}
         </Title>
 
         <div className={styles.blocks}>
-          {lists.notWork.map((block, index) => (
+          {notWork.map((block, index) => (
             <div key={index} className={`${styles.block} ${styles.block_outlined}`}>
               {block.map((item, id) => (
                 <li key={id} className={styles.item}>

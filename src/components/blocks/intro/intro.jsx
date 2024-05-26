@@ -3,9 +3,12 @@ import Container from '../../ui/container/container';
 import Button from '../../ui/button/button';
 import headerPhoto from '../../../assets/img/header-photo.png';
 import { TitleSize, TitleLevel, TelegramLink } from '../../../utils/consts';
+import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
 function Intro() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.intro}>
       <Container>
@@ -15,12 +18,14 @@ function Intro() {
           </div>
           <div className={styles.intro__content}>
             <Title level={TitleLevel.H3} size={TitleSize.SMALL}>
-              Яна Павлюц
+              {t('intro.subtitle')}
             </Title>
+
             <Title level={TitleLevel.H1} size={TitleSize.BIG}>
-              психолог - консультант в сексологии
+              {t('intro.title')}
             </Title>
-            <Button link={TelegramLink}>Записаться</Button>
+
+            <Button link={TelegramLink}>{t('intro.button')}</Button>
           </div>
         </div>
       </Container>
