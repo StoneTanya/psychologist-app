@@ -3,9 +3,9 @@ import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel, TelegramLink } from '../../../utils/consts';
 import styles from './style.module.css';
-import paymentOnline from '../../../assets/img/payment-online.png';
-import paymentIndividual from '../../../assets/img/payment-individual.png';
-import paymentTime from '../../../assets/img/payment-time.png';
+import paymentOnline from '../../../assets/img/payment-online.svg';
+import paymentIndividual from '../../../assets/img/payment-individual.svg';
+import paymentTime from '../../../assets/img/payment-time.svg';
 
 function Payment() {
   return (

@@ -36,14 +36,6 @@ function About() {
             <p className={styles.about__text}>В личной терапии с 2019 года.</p>
           </div>
         </div>
-        <div className={styles.about__mobile}>
-          <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
-          <p className={styles.about__text}>
-            Выпускница Международной академии сексологии по программам общей сексологии, женской
-            сексологии и мужской сексологии.
-          </p>
-          <p className={styles.about__text}>Состою в Ассоциации сексологов Российской Федерации</p>
-        </div>
       </Container>
     </section>
   );
