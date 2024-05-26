@@ -2,7 +2,6 @@
   background-color: #fbf7f2;
   position: sticky;
   top: 0px;
-
   z-index: 10;
   transition: 0.6s all ease-in-out;
 }
@@ -16,4 +15,9 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0 20px 0;
+
+  @media (max-width: 650px) {
+    padding: 0;
+    justify-content: end;
+  }
 }
