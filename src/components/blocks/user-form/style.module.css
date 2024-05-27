@@ -8,17 +8,7 @@
 .form__content {
   flex: 1;
   max-width: 600px;
-  margin-right: 1em;
-}
-
-.form__content h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-.form__content p {
-  font-size: 1em;
-  margin-bottom: 1em;
+  margin: 2rem;
 }
 
 .form__link {
@@ -48,13 +38,11 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: justify;
-    margin-bottom: 1em;
+    margin-bottom: 2rem;
   }
 
   .form__content {
     max-width: 100%;
-    margin-right: 0;
-    padding: 2rem;
   }
 
   .form__link {
