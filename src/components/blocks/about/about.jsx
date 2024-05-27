@@ -9,8 +9,8 @@ function About() {
     <section className={styles.about}>
       <Container>
         <div className={styles.about__wrapper}>
+          <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
           <div className={styles.about__left}>
-            <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
             <div className={styles.about__img}>
               <img src={aboutLogo} alt="Логотип Ассоциации сексологов РФ" />
             </div>
