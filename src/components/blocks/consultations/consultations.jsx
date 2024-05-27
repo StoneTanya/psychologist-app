@@ -1,6 +1,7 @@
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import dataList from './data';
 
 import styles from './style.module.css';
@@ -9,7 +10,7 @@ function Consultations() {
   const lists = dataList();
 
   return (
-    <section className={styles.consult}>
+    <Element name="Консультации" className={styles.consult}>
       <Container>
         <Title level={TitleLevel.H2} className={styles.title}>
           С какими запросами я могу помочь:
@@ -43,7 +44,7 @@ function Consultations() {
           ))}
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 

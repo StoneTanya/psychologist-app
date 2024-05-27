@@ -1,6 +1,11 @@
 .menu__link {
   color: var(--highlight-color);
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+  }
 }
 
 .menu__list {

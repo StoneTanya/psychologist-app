@@ -1,12 +1,14 @@
-import styles from './style.module.css';
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleSize, TitleLevel } from '../../../utils/consts';
+import { Element } from 'react-scroll';
+
 import aboutLogo from '../../../assets/img/colorsex.png';
+import styles from './style.module.css';
 
 function About() {
   return (
-    <section className={styles.about}>
+    <Element name="Обо мне" className={styles.about}>
       <Container>
         <div className={styles.about__wrapper}>
           <div className={styles.about__left}>
@@ -37,7 +39,7 @@ function About() {
           </div>
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 
