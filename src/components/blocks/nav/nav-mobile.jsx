@@ -5,23 +5,38 @@ import styles from './style.module.css';
 
 function NavMobile() {
   const [isOpen, setOpen] = useState(false);
+
   const ref = useRef(null);
 
   const useOnClickOutside = (ref, handler) => {
     useEffect(() => {
-      const listener = event => {
+      const clickOutsidelistener = (event) => {
         if (!ref.current || ref.current.contains(event.target)) return;
         handler(event);
       };
-      document.addEventListener("mousedown", listener);
-
+      document.addEventListener('mousedown', clickOutsidelistener);
       return () => {
-        document.removeEventListener("mousedown", listener);
+        document.removeEventListener('mousedown', clickOutsidelistener);
       };
     }, [ref, handler]);
   };
 
   useOnClickOutside(ref, () => setOpen(false));
+
+  useEffect(() => {
+      let prevScrollY = window.scrollY;
+      const scrollDownlistener = () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY < prevScrollY)
+          return;
+          setOpen(false);
+      };
+      document.addEventListener('scroll', scrollDownlistener);
+      return () => {
+        document.removeEventListener('scroll', scrollDownlistener);
+      };
+    }, []);
+
 
   return (
     <div ref={ref} className={styles.nav_mobile}>
