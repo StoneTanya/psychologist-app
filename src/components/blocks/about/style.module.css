@@ -13,12 +13,12 @@
 }
 
 .about__left {
-  width: 250px;
+  max-width: 25%;
 }
 
 .about__img {
-  margin: var(--space-m) auto var(--space-m);
-  max-width: 50%;
+  margin: var(--space-m) var(--space-m);
+  max-width: 30%;
 }
 
 .about__img img {
@@ -28,7 +28,7 @@
 }
 
 .about__right {
-  width: 70%;
+  width: 72%;
 }
 
 .about__text {
@@ -54,19 +54,22 @@
     flex-direction: column;
     gap: 2rem;
   }
+  
   .about__left {
     order: 2;
   }
+  
   .about__img {
     display: block;
     float: left;
     margin-right: var(--space-m);
   }
+  
   .about__img img {
     width: 60px;
     height: auto;
   }
-
+  
   .about__right, .about__left  {
     width: 100%;
   }
