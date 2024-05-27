@@ -1,6 +1,10 @@
 .about {
   padding-top: calc(2 * var(--space-xxl));
   padding-bottom: calc(2 * var(--space-xxl));
+  @media (max-width: 800px) {
+    padding-top: calc(6 * var(--space-s));
+    padding-bottom: calc(6 * var(--space-s));
+  }
 }
 
 .about__wrapper {
@@ -48,25 +52,22 @@
 @media (max-width: 600px) {
   .about__wrapper {
     flex-direction: column;
+    gap: 2rem;
   }
-
   .about__left {
-    width: 85%;
+    order: 2;
   }
   .about__img {
-    margin-top: 10px;
+    display: block;
     float: left;
     margin-right: var(--space-m);
   }
   .about__img img {
-    width: 50px;
+    width: 60px;
     height: auto;
   }
-  .about__left p {
-    margin-top: 10px;
-    overflow: hidden;
-  }
-  .about__right {
+
+  .about__right, .about__left  {
     width: 100%;
   }
 }
