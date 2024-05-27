@@ -1,3 +1,7 @@
+.container {
+  padding: 0;
+}
+
 .method__section {
   display: flex;
   flex-wrap: wrap;
@@ -5,20 +9,11 @@
   justify-content: space-between;
 }
 
-.method__img {
-  flex: 1;
-}
-
-.method__img img {
-  display: block;
-  max-width: 100%;
-}
-
 .method__content {
-  flex: 1;
   max-width: 50%;
   margin: 2rem;
   font-size: var(--text-size-base);
+  flex: 1 1 50px;
 }
 
 .method__content p {
@@ -32,38 +27,38 @@
   margin-top: 4rem;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    padding: 0;
-  }
+.method__img {
+  /* width: 100%; */
+  height: 600px;
+  background-image: url('../../../assets/img/method-photo.png');
+  background-position: top 30% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1 1 50px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .container {
     padding: 0;
   }
 
   .method__section {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1em;
   }
 
   .method__content {
     max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .method__content p {
+    text-align: justify;
   }
 
   .method__img {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-  }
-
-  .method__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    max-height: 400px;
+    height: 400px;
   }
 }

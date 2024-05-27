@@ -10,7 +10,7 @@ function About() {
   return (
     <Element name="Обо мне" className={styles.about}>
       <Container>
-      <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
+      <Title level={TitleLevel.H2}>Обо мне</Title>
         <div className={styles.about__wrapper}>
           <div className={styles.about__left}>
             <div className={styles.about__img}>
@@ -21,8 +21,8 @@ function About() {
             </p>
           </div>
           <div className={styles.about__right}>
-            <Title level={TitleLevel.H3} size={TitleSize.SMALL}>
-              МЕНЯ ЗОВУТ ЯНА ПАВЛЮЦ
+            <Title level={TitleLevel.H3} size={TitleSize.SMALL} className={styles.about__title}>
+              Меня зовут Яна Павлюц
             </Title>
             <p className={styles.about__text}>
               Консультирую мужчин и женщин по вопросам, связанным с качеством сексуальной жизни.

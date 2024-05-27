@@ -8,6 +8,8 @@
 
   @media (max-width: 800px) {
     --space-indent: var(--space-l);
+    padding-top: calc(3 * var(--space-s));
+    padding-bottom: calc(3 * var(--space-s));
   }
 }
 

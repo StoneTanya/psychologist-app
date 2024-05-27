@@ -11,7 +11,7 @@
 
 .payment__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10%;
   margin-bottom: var(--space-xxl);
   font-size: var(--text-size-base);
@@ -28,6 +28,7 @@
 
   @media (max-width: 500px) {
     order: 2;
+    width: 100%;
   }
 }
 

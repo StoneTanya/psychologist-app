@@ -1,5 +1,5 @@
 .menu__link {
-  color: var(--highlight-color);
+  color: var(--secondary-color);
   text-decoration: none;
 
   &:hover {
@@ -13,7 +13,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0 40px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: var(--text-size-base);
 }
 

@@ -14,7 +14,7 @@ function Intro() {
             <img src={headerPhoto} alt="Фотография психолога Яны Павлюц" />
           </div>
           <div className={styles.intro__content}>
-            <Title level={TitleLevel.H3} size={TitleSize.SMALL}>
+            <Title level={TitleLevel.H3} size={TitleSize.SMALL} className={styles.intro__title}>
               Яна Павлюц
             </Title>
             <Title level={TitleLevel.H1} size={TitleSize.BIG}>
