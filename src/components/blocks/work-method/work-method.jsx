@@ -11,7 +11,7 @@ export default function WorkMethod() {
       <Container className={styles.container}>
         <div className={styles.method__section}>
           <div className={styles.method__img}>
-            <img src={methodPhoto} alt="Фотография психолога Яны Павлюц" />
+            <img src={methodPhoto} loading="lazy" alt="Фотография психолога Яны Павлюц" />
           </div>
           <div className={styles.method__content}>
             <p>Работаю в полимодальном подходе.</p>

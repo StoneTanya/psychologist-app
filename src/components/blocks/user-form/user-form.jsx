@@ -26,7 +26,7 @@ function UserForm() {
             </Button>
           </div>
           <div className={styles.form__img}>
-            <img src={UserFormPhoto} alt="Фотография психолога Яны Павлюц" />
+            <img src={UserFormPhoto} alt="Фотография психолога Яны Павлюц" loading="lazy" />
           </div>
         </div>
       </Container>
