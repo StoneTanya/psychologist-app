@@ -16,7 +16,7 @@ function Footer() {
 
           <p className={styles.footer__copyright}>
             <span>&copy; </span> Created by{' '}
-            <a className={styles.footer__createdby} href="https://itgirlschool.com/">
+            <a className={styles.footer__createdby} target='blank' href="https://itgirlschool.com/">
               ITGirls,
             </a>{' '}
             <span>2024 </span>
