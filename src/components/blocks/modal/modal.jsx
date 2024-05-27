@@ -3,7 +3,7 @@ import ModalDefault from './modal-default';
 import ModalForbidding from './modal-forbidding';
 import { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
-import { inFiveMinutes } from '../../../utils/consts';
+import { cookieTime } from '../../../utils/consts';
 
 function Modal() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -22,8 +22,8 @@ function Modal() {
     setModalOpen(false);
     Cookies.set('areYouOver18', 'yes', {
       path: '',
-      expires: inFiveMinutes,
-    }); /* имя "areYouOver18"    Значение "yes"       Хранится "5 минут" */
+      expires: cookieTime,
+    }); /* имя "areYouOver18"    Значение "yes"       Хранится "15 минут" */
   };
 
   const underAge = () => {
