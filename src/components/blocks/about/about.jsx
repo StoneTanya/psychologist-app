@@ -10,9 +10,9 @@ function About() {
   return (
     <Element name="Обо мне" className={styles.about}>
       <Container>
+      <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
         <div className={styles.about__wrapper}>
           <div className={styles.about__left}>
-            <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
             <div className={styles.about__img}>
               <img src={aboutLogo} alt="Логотип Ассоциации сексологов РФ" />
             </div>
