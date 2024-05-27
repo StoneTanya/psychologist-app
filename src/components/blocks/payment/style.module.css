@@ -73,5 +73,9 @@
 
 .payment__button {
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 280px;
+  
+  @media (min-width: 451px) {
+    max-width: 380px;
+  }
 }
