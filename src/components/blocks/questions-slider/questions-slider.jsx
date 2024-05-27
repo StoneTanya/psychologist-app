@@ -4,6 +4,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import Container from '../../ui/container/container';
 import Title from '../../ui/title/title';
 import { TitleLevel, TitleSize } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -16,7 +17,7 @@ function QuestionsSlider() {
   };
 
   return (
-    <section className={styles.questions}>
+    <Element name="Вопрос-ответ" className={styles.questions}>
       <Container>
         <Title size={TitleSize.SMALL} level={TitleLevel.H2} className={styles.title}>
           Ваши вопросы
@@ -52,7 +53,7 @@ function QuestionsSlider() {
           </Swiper>
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 

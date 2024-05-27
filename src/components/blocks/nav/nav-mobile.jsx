@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { navList } from './route';
 import { Fade as Hamburger } from 'hamburger-react';
+import { scroller } from 'react-scroll';
 import styles from './style.module.css';
 
 function NavMobile() {
@@ -23,6 +24,14 @@ function NavMobile() {
 
   useOnClickOutside(ref, () => setOpen(false));
 
+  const scroll = (element) => {
+    setOpen((prev) => !prev);
+    scroller.scrollTo(element, {
+      smooth: true,
+      duration: 500,
+    });
+  };
+
   useEffect(() => {
       let prevScrollY = window.scrollY;
       const scrollDownlistener = () => {
@@ -36,7 +45,6 @@ function NavMobile() {
         document.removeEventListener('scroll', scrollDownlistener);
       };
     }, []);
-
 
   return (
     <div ref={ref} className={styles.nav_mobile}>
@@ -53,7 +61,7 @@ function NavMobile() {
             {navList.map((nav, navId) => {
               return (
                 <li key={navId} className={styles.nav_mobile__item}>
-                  <a onClick={() => setOpen((prev) => !prev)}>
+                  <a onClick={() => scroll(nav)}>
                     <span>{nav}</span>
                   </a>
                 </li>

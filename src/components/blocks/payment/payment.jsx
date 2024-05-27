@@ -2,6 +2,7 @@ import Button from '../../ui/button/button';
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel, TelegramLink } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import styles from './style.module.css';
 import paymentOnline from '../../../assets/img/payment-online.svg';
 import paymentIndividual from '../../../assets/img/payment-individual.svg';
@@ -9,7 +10,7 @@ import paymentTime from '../../../assets/img/payment-time.svg';
 
 function Payment() {
   return (
-    <section className={styles.payment}>
+    <Element name="Оплата" className={styles.payment}>
       <Container>
         <Title level={TitleLevel.H2}>Стоимость и оплата</Title>
         <div className={styles.payment__wrapper}>
@@ -51,7 +52,7 @@ function Payment() {
           Записаться на консультацию
         </Button>
       </Container>
-    </section>
+    </Element>
   );
 }
 export default Payment;
