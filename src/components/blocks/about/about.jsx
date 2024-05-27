@@ -8,8 +8,8 @@ function About() {
   return (
     <section className={styles.about}>
       <Container>
+      <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
         <div className={styles.about__wrapper}>
-          <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
           <div className={styles.about__left}>
             <div className={styles.about__img}>
               <img src={aboutLogo} alt="Логотип Ассоциации сексологов РФ" />

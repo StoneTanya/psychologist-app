@@ -29,11 +29,13 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .container {
     padding: 0;
   }
+}
 
+@media (max-width: 768px) {
   .form__section {
     flex-direction: column-reverse;
     align-items: center;

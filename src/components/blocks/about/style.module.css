@@ -1,6 +1,7 @@
 .about {
-  padding-top: calc(2 * var(--space-xxl));
-  padding-bottom: calc(2 * var(--space-xxl));
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+
   @media (max-width: 800px) {
     padding-top: calc(6 * var(--space-s));
     padding-bottom: calc(6 * var(--space-s));
@@ -10,10 +11,11 @@
 .about__wrapper {
   display: flex;
   gap: 5%;
+  margin-top: 2rem;
 }
 
 .about__left {
-  max-width: 25%;
+  width: 250px;
 }
 
 .about__img {
@@ -52,25 +54,26 @@
 @media (max-width: 600px) {
   .about__wrapper {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
-  
+
   .about__left {
     order: 2;
   }
-  
+
   .about__img {
     display: block;
     float: left;
     margin-right: var(--space-m);
   }
-  
+
   .about__img img {
     width: 60px;
     height: auto;
   }
-  
+
   .about__right, .about__left  {
     width: 100%;
+    text-align: justify;
   }
 }
