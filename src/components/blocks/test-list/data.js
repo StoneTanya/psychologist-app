@@ -1,19 +1,23 @@
+import i18n from '../../../i18n';
+
 const testList = () => {
+  const titles = i18n.t('tests.links', { returnObjects: true });
+
   return [
     {
-      title: 'Тест на тревожность',
+      title: titles[0],
       link: 'https://psytests.org/depr/bai.html',
     },
     {
-      title: 'Тест на алекситимию',
+      title: titles[1],
       link: 'https://psytests.org/diag/tas26.html',
     },
     {
-      title: 'Сексуальный портрет',
+      title: titles[2],
       link: 'https://psytests.org/kumar/vsp.html',
     },
     {
-      title: 'Шкала сексуальных установок',
+      title: titles[3],
       link: 'https://psytests.org/family/bsas.html',
     },
   ];
