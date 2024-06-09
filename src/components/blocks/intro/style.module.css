@@ -1,8 +1,8 @@
 .intro {
-background-color: var(--base-background-color);
+  background-color: var(--base-background-color);
 }
+
 .intro__title {
-  color: var(--secondary-color);
   font-weight: 400;
 }
 
