@@ -15,8 +15,8 @@
   margin-top: 4rem;
 }
 
-.about__telegram {
-  margin: 0 auto var(--space-l);
+.about__contact {
+  align-content: center;
 }
 
 .about__description {
@@ -25,10 +25,11 @@
   top: -80px;
   text-align: justify;
   hyphens: auto;
+
+  font-size: var(--text-size-base);
 }
 
-.about__text {
-  font-size: var(--text-size-base);
+.about__description p {
   margin: 0 0 15px;
 }
 
@@ -57,18 +58,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     order: 2;
-  }
-
-  .about__telegram {
-    margin: 0;
   }
 
   .about__description {
     margin-bottom: 0;
     top: 0;
-    width: 100%;
     order: 1;
   }
 }
