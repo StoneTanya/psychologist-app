@@ -1,8 +1,17 @@
-import { navList } from './route';
+// import { navList } from './route';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
 function NavDesktop() {
+  // const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  // смена языка
+  // const changeLanguage = (language) => {
+  //   i18n.changeLanguage(language);
+  // };
+  const navList = t('nav.links', { returnObjects: true });
   return (
     <>
       <nav className={styles.nav__desktop}>
@@ -16,6 +25,8 @@ function NavDesktop() {
           ))}
         </ul>
       </nav>
+      {/* <button onClick={() => changeLanguage('en')}>EN</button>
+      <button onClick={() => changeLanguage('ru')}>RU</button> */}
     </>
   );
 }

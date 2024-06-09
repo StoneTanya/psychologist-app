@@ -2,31 +2,32 @@ import Button from '../../ui/button/button';
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel, FormLink } from '../../../utils/consts';
+import userFormPhoto from '../../../assets/img/userForm-photo.png';
+import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
-import UserFormPhoto from '../../../assets/img/userForm-photo.png';
-
 function UserForm() {
+  const { t } = useTranslation();
+
   return (
-    <section>
+    <section className={styles.questions__form}>
       <Container className={styles.container}>
         <div className={styles.form__section}>
           <div className={styles.form__content}>
-            <Title level={TitleLevel.H2}>Вопрос-ответ</Title>
+            <Title level={TitleLevel.H2}>{t('userForm.title')}</Title>
+
             <p>
-              Здесь вы можете задать свой вопрос. Форма анонимная, но для ответа вам нужно будет
-              указать почту, на которую вы ожидаете ответ.
+              {t('userForm.text1')}
+              <br /> {t('userForm.text2')}
             </p>
-            <p>
-              Некоторые ответы я могу публиковать на сайте. Вопрос остается анонимным: без контактов
-              и любой другой персональной информации.
-            </p>
+            <p>{t('userForm.text3')}</p>
+
             <Button link={FormLink} className={styles.form__link}>
-              Задать вопрос
+              {t('userForm.button')}
             </Button>
           </div>
           <div className={styles.form__img}>
-            <img src={UserFormPhoto} alt="Фотография психолога Яны Павлюц" />
+            <img src={userFormPhoto} alt={t('userForm.alt')} />
           </div>
         </div>
       </Container>
