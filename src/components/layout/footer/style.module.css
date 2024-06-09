@@ -23,23 +23,19 @@
 .footer__link,
 .footer__createdby {
   text-decoration: none;
-}
 
-.footer__link {
-  color: var(--link-color);
-}
-
-.footer__link:hover,
-.footer__createdby:hover {
-  color: var(--accent-color);
+  &:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
 }
 
 .footer__copyright {
   font-size: 1.2rem;
 }
 
-.footer__copyright a {
+a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--base-background-color);
 }

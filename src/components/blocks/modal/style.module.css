@@ -29,7 +29,7 @@
   width: 85%;
   min-width: 320px;
   max-width: 500px;
-  background-color: var(--modal-background-color);
+  background-color: var(--accent-color);
   padding: 3% 2%;
   z-index: 1000;
   border-radius: 10px;
@@ -68,7 +68,6 @@
   color: var(--black-color);
   font-family: var(--font-family-titles);
   font-weight: bolder;
-
 }
 
 .button__yes,

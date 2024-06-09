@@ -15,8 +15,9 @@
   padding: 0;
   text-align: start;
   &:hover {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     color: var(--highlight-color);
+    text-decoration: underline;
   }
 }
 
