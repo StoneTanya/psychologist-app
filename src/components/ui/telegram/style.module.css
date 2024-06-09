@@ -1,25 +1,19 @@
-.telegram__wrapper {
+.telegram__link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 1rem;
   font-size: var(--text-size-base);
-}
-
-.telegram__wrapper p {
-  margin: 0;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--text-color-base);
+  margin-bottom: 2.5rem;
+  &:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
 }
 
 .telegram__icon {
   height: 30px;
-}
-
-.telegram__link {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-.footer__link:hover {
-  color: var(--accent-color);
 }
