@@ -1,6 +1,6 @@
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
-import { TitleLevel, TitleSize, TelegramLink } from '../../../utils/consts';
+import { TitleLevel, TelegramLink } from '../../../utils/consts';
 import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import Telegram from '../../ui/telegram/telegram';
