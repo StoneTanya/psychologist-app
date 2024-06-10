@@ -6,12 +6,12 @@
   padding-left: var(--space-l);
 
   @media (max-width: 1000px) {
-    padding-right: var(--space-m);
-    padding-left: var(--space-m);
+    padding-right: calc(3 * var(--space-s));
+    padding-left: calc(3 * var(--space-s));
   }
-  
+
   @media (max-width: 500px) {
-    padding-right: var(--space-s);
-    padding-left: var(--space-s);
+    padding-right: calc(2 * var(--space-s));
+    padding-left: calc(2 * var(--space-s));
   }
 }

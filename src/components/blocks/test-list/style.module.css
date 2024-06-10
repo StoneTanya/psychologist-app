@@ -3,6 +3,10 @@
   background-color: var(--white-color);
   padding-top: calc(2 * var(--space-xxl));
   padding-bottom: calc(2 * var(--space-xxl));
+  @media (max-width: 800px) {
+    padding-top: calc(3 * var(--space-s));
+    padding-bottom: calc(3 * var(--space-s));
+  }
 }
 
 .tests__link {
@@ -11,8 +15,9 @@
   padding: 0;
   text-align: start;
   &:hover {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     color: var(--highlight-color);
+    text-decoration: underline;
   }
 }
 

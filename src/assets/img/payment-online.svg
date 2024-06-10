@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="82.386002"
+   height="72.248001"
+   viewBox="0 0 82.386002 72.248001"
+   sodipodi:docname="payment-online.png"
+   inkscape:version="0.0"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="11.26087"
+     inkscape:cx="32.19112"
+     inkscape:cy="34.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     transform="translate(-0.47509685,1.7)">
+    <path
+       style="fill:#000000"
+       d="m 33.444016,67.621555 c -0.266409,-2.660828 5.266668,-1 13.799998,-1 14.622905,0 16.200005,-0.457555 16.200005,-4.7 0,-2.144444 -0.4058,-2.3 -6,-2.3 h -6.000005 v -10.5 -10.5 h 6.000005 6 v -7.032119 c 0,-8.496736 -0.699172,-12.20592 -6.329562,-18.314174 C 50.994092,6.6354552 45.565334,4.3652682 35.811101,3.8296407 24.367796,3.2012622 18.298433,4.7954553 11.059584,12.087663 4.7689661,18.424648 3.4440155,23.075173 3.4440155,32.487575 v 6.13398 h 6 6.0000005 v 10.5 10.5 H 9.5990025 c -9.22054797,0 -9.1728557,-1.734202 -8.7296227,-21.436834 C 1.2256388,22.348286 1.4262026,21.781782 4.1697208,16.55946 6.5121145,12.100683 11.561818,6.5990525 18.865566,3.2420077 26.88475,-0.44387473 40.508535,0.0738486 48.377675,3.7400772 55.73182,7.166362 60.249188,11.646351 63.524648,17.85393 c 2.61941,4.964225 2.427391,5.769615 2.743791,25.579572 0.43191,27.041483 1.74519,25.188053 -17.847475,25.188053 -9.31797,0 -14.914966,-0.380941 -14.976948,-1 z m -21,-18.5 v -8.5 h -4.5000005 -4.5 v 7.833333 c 0,4.308334 0.3,8.133334 0.666666,8.5 0.366667,0.366667 2.391667,0.666667 4.5,0.666667 h 3.8333345 z m 51.000003,0 v -8.5 h -4.5 -4.500005 v 8.5 8.5 h 4.500005 4.5 z"
+       id="path1"
+       inkscape:transform-center-x="19.53668"
+       inkscape:transform-center-y="26.72973"
+       sodipodi:nodetypes="sssscccccssssscccccsssssssssccccsssccccccccccc" />
+  </g>
+</svg>

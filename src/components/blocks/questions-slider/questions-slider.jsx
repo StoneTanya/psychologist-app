@@ -3,6 +3,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import Container from '../../ui/container/container';
 import Title from '../../ui/title/title';
 import { TitleLevel, TitleSize } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,7 +20,7 @@ function QuestionsSlider() {
   const questionsList = t('questions:questions', { returnObjects: true });
 
   return (
-    <section className={styles.questions}>
+    <Element name="Вопрос-ответ" className={styles.questions}>
       <Container>
         <Title size={TitleSize.SMALL} level={TitleLevel.H2} className={styles.title}>
           {t('questions.title')}
@@ -55,7 +56,7 @@ function QuestionsSlider() {
           </Swiper>
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 

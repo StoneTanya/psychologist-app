@@ -10,7 +10,6 @@
   border-radius: 100px;
   text-decoration: none;
   border: none;
-  background-image: none;
   box-shadow: none;
   cursor: pointer;
   transition:
@@ -18,7 +17,7 @@
     box-shadow 0.2s ease-out;
 
   &:hover {
-    background-color: rgb(79, 160, 251, 0.7);
+    background-color: var(--button-hover-color);
   }
 
   &:active {

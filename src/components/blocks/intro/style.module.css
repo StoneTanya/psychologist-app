@@ -1,10 +1,14 @@
 .intro {
-background-color: var(--base-background-color);
+  background-color: var(--base-background-color);
+}
+
+.intro__title {
+  font-weight: 400;
 }
 
 .intro__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 2em 0;
 }
@@ -18,7 +22,7 @@ background-color: var(--base-background-color);
 }
 
 .intro__img {
-  max-width: 35%;
+  max-width: 45%;
   overflow: hidden;
 }
 

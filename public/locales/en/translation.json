@@ -1,37 +1,37 @@
 {
   "nav": {
-    "links": ["Обо мне", "Консультации", "Оплата", "Вопрос-ответ", "Тесты"]
+    "links": ["Who i am", "Consulting", "Payment", "Q&A", "Tests"]
   },
 
   "intro": {
-    "subtitle": "Яна Павлюц",
-    "title": "психолог - консультант в сексологии",
-    "button": "Записаться"
+    "subtitle": "Yana Pavlyuts",
+    "title": "Sex therapist",
+    "alt": "Фотография психолога Яны Павлюц"
   },
 
   "modalCheck": {
     "default": {
-      "description": "Информация на сайте не предназначена для посетителей младше 18 лет. Для доступа к ней подтвердите, пожалуйста, свое совершеннолетие.",
-      "yes": "Да, мне есть 18 лет",
-      "no": "Нет, я младше",
-      "cookie": "Для вашего удобства сайт работает с файлами cookie - заходя на данный ресурс, вы соглашаетесь на их использование."
+      "description": "The information on the website is not intended for visitors under the age of 18. Please confirm your age to access it. Are you 18 years old?",
+      "yes": "Yes, I am 18 years old",
+      "no": "No, I'm younger",
+      "cookie": "For your convenience, the site uses Cookies - by visiting this resource, you agree to their use."
     },
     "forbidden": {
-      "title": "Буду ждать тебя позже!",
-      "description": "Сайт содержит информацию, предназначенную только для лиц старше 18 лет.",
-      "back": "Назад"
+      "title": "I will wait for you later!",
+      "description": "The website contains information intended only for persons over 18 years old.",
+      "back": "Back"
     }
   },
 
+
   "about": {
-    "title": "Обо мне",
-    "imgAlt": "Логотип Ассоциации сексологов РФ",
-    "asociation": "Состою в Ассоциации сексологов Российской Федерации",
-    "fact1": " Консультирую мужчин и женщин по вопросам, связанным с качеством сексуальной жизни.",
-    "fact2": "Выпускница Международной академии сексологии по программам:",
-    "fact2List": ["общая сексология", "женская сексология", "женская сексология"],
-    "fact3": "В личной терапии с 2019 года.",
-    "title2": "Меня зовут Яна Павлюц"
+    "title": "Who i am",
+    "button": "Записаться",
+    "fact1": "My name is Yana Pavlyuts and I help men and women improve their sexual life. I work in a multimodal approach - a method that combines knowledge from different schools of psychology.",
+    "fact2": "  I have received training in International Academy of Sexology in the following programs:",
+    "fact2List": ["general sexology", "female sexology", "male sexology"],
+    "fact3": "I have been a member of the Association of Sexologists of the Russian Federation since 2019.",
+    "fact4": " I have been in personal therapy for 5 years."
   },
 
   "consultations": {
@@ -50,7 +50,8 @@
           "болезненные ощущения во время полового акта",
           "сложности с достижением оргазма",
           "сильная тревога перед половым актом",
-          "преждевременное завершение полового акта или замедленный половой акт"
+          "преждевременное завершение полового акта или замедленный половой акт",
+          "травма сексуального насилия"
         ]
       ],
 
@@ -63,16 +64,21 @@
     "title2": "С какими запросами не работаю:"
   },
 
-  "workMethod": {
-    "alt": "Фотография психолога Яны Павлюц",
-    "title2": "Работаю в полимодальном подходе.",
-    "description": "Это значит, что в процессе консультации использую разные методы терапии (аналитическая терапия, ДПДГ, эмоционально-образная психотерапия, элементы когнитивно-поведенческой терапии) в зависимости от того, что лучше всего подходит для вашего запроса.",
-    "title": "Оказываю психологическое сопровождение и терапию людям, пережившим сексуальное насилие"
-  },
-
   "payment": {
     "title": "Стоимость и оплата",
-    "button": "Записаться на консультацию"
+    "button": "Записаться на консультацию",
+    "euroPrice": "30 euro",
+    "rubPrice": "3 000 рублей",
+    "RSDPrice": "3 500 RSD",
+    "paymentMethodRSD": "(онлайн Райффайзен банк/оффлайн наличными)",
+    "paymentMethodRUB": "(онлайн Тинькофф/Cбербанк)",
+    "paymentMethodEURO": "(на карту Revolut)",
+    "online": "онлайн (zoom)",
+    "format": "индивидуальная сессия",
+    "duration": "60 минут",
+    "altOnline": "Иконка - наушники для онлайн встречи",
+    "altDuration": "Иконка часы",
+    "altFormat": "Иконка, где два человека друг напротив друга"
   },
 
   "userForm": {

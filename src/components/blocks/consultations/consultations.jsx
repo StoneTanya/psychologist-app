@@ -1,6 +1,7 @@
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
 import { TitleLevel } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
@@ -10,7 +11,7 @@ function Consultations() {
   const notWork = t('consultations.lists.notWork', { returnObjects: true });
 
   return (
-    <section className={styles.consult}>
+    <Element name="Консультации" className={styles.consult}>
       <Container>
         <Title level={TitleLevel.H2} className={styles.title}>
           {t('consultations.title')}
@@ -44,7 +45,7 @@ function Consultations() {
           ))}
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 

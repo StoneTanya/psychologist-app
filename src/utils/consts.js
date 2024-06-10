@@ -19,4 +19,4 @@ export const TelegramLink = 'https://t.me/pavlyuts_pro';
 
 export const FormLink = 'https://forms.yandex.ru/u/664276fa068ff0bae523d121/';
 
-export const inFiveMinutes = new Date(new Date().getTime() + 5 * 60 * 1000);
+export const cookieTime = new Date(new Date().getTime() + 20 * 60 * 1000);

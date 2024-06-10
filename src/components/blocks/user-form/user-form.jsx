@@ -4,16 +4,15 @@ import Container from '../../ui/container/container';
 import { TitleLevel, FormLink } from '../../../utils/consts';
 import userFormPhoto from '../../../assets/img/userForm-photo.png';
 import { useTranslation } from 'react-i18next';
-
 import styles from './style.module.css';
 
 function UserForm() {
   const { t } = useTranslation();
 
   return (
-    <section>
-      <Container>
-        <div className={styles.form__wrapper}>
+    <section className={styles.questions__form}>
+      <Container className={styles.container}>
+        <div className={styles.form__section}>
           <div className={styles.form__content}>
             <Title level={TitleLevel.H2}>{t('userForm.title')}</Title>
 

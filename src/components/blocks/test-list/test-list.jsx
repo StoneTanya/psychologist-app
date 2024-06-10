@@ -3,6 +3,7 @@ import Title from '../../ui/title/title';
 import Button from '../../ui/button/button';
 import Container from '../../ui/container/container';
 import { TitleLevel } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 
 import styles from './style.module.css';
@@ -11,7 +12,7 @@ function TestList() {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.tests}>
+    <Element name="Тесты" className={styles.tests}>
       <Container>
         <Title level={TitleLevel.H2}>{t('tests.title')}</Title>
         <p>{t('tests.description')}</p>
@@ -26,7 +27,7 @@ function TestList() {
           ))}
         </ul>
       </Container>
-    </section>
+    </Element>
   );
 }
 export default TestList;

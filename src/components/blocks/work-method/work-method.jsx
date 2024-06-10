@@ -10,8 +10,8 @@ export default function WorkMethod() {
 
   return (
     <section>
-      <Container>
-        <div className={styles.method__wrapper}>
+      <Container className={styles.container}>
+        <div className={styles.method__section}>
           <div className={styles.method__img}>
             <img src={methodPhoto} alt={t('workMethod.alt')} />
           </div>

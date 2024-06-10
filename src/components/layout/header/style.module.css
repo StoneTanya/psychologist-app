@@ -1,10 +1,26 @@
 .header {
   background-color: var(--base-background-color);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  transition: 0.6s all ease-in-out;
+  @media (max-width: 650px) {
+    position: relative;
+  }
+}
+
+.header_down {
+  top: -12rem;
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
+
+  @media (max-width: 650px) {
+    padding: 0;
+    justify-content: end;
+  }
 }

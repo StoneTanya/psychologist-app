@@ -1,29 +1,19 @@
-.footer {
-  background-color: var(--footer-background-color);
-  padding: 2rem 0;
-}
-
-.footer__wrapper {
+.telegram__link {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-
-.footer__wrapper p {
-  margin: 0;
-}
-
-.footer__createdby {
+  font-size: var(--text-size-base);
+  font-style: italic;
   text-decoration: none;
   color: var(--text-color-base);
-  
+  margin-bottom: 2.5rem;
   &:hover {
     color: var(--accent-color);
     text-decoration: underline;
   }
 }
 
-.footer__copyright {
-  font-size: 1.2rem;
+.telegram__icon {
+  height: 30px;
 }

@@ -1,22 +1,20 @@
 :root {
-  --base-background-color: rgba(237, 214, 190, 0.2);
-  --accent-color: rgb(79, 160, 251);
-  --secondary-color: rgb(120, 98, 47);
+  --base-background-color: rgb(231, 226, 224);
+  --accent-color: rgb(173, 192, 136);
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(0, 0, 0);
-  --highlight-color: rgb(120, 98, 47);
-  --footer-background-color: rgb(237, 214, 190);
-  --block-background-color: rgba(237, 214, 190, 0.25);
-  --modal-background-color: rgb(105, 181, 248);
-  --text-color-base: rgb(34, 34, 15);
-  --link-color: rgb(84, 152, 214);
+  --highlight-color: rgb(108, 104, 102);
+  --button-hover-color: rgb(178, 166, 142);
+  --footer-background-color: rgb(178, 166, 142);
+  --text-color-base: rgb(50, 57, 50);
+  --link-color: rgb(173, 192, 136);
   --text-size-base: 1.7rem;
   --font-family-titles: Mont;
   --font-family-base: Montserrat;
   --font-family-titles-bold: MontBold;
 
-  --space-s: 5px;
-  --space-m: 12px;
+  --space-s: 10px;
+  --space-m: 15px;
   --space-l: 24px;
   --space-xl: 30px;
   --space-xxl: 40px;
@@ -24,7 +22,6 @@
   --border-radius-m: 24px;
 
   @media (max-width: 450px) {
-    --text-size-base: 1.1rem;
+    --text-size-base: 1.5rem;
   }
-  
 }

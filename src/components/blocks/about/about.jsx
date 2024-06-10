@@ -1,49 +1,40 @@
-import styles from './style.module.css';
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
-import { TitleSize, TitleLevel } from '../../../utils/consts';
-import aboutLogo from '../../../assets/img/colorsex.png';
+import { TitleLevel, TelegramLink } from '../../../utils/consts';
+import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import Telegram from '../../ui/telegram/telegram';
+import Button from '../../ui/button/button';
+import styles from './style.module.css';
 
 function About() {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.about}>
+    <Element name="Обо мне" className={styles.about}>
       <Container>
+        <Title level={TitleLevel.H2} className={styles.about__title}>
+          {t('about.title')}
+        </Title>
         <div className={styles.about__wrapper}>
-          <div className={styles.about__left}>
-            <Title level={TitleLevel.H2} className={styles.title}>
-              {t('about.title')}
-            </Title>
-
-            <div className={styles.about__img}>
-              <img src={aboutLogo} alt={t('about.imgAlt')} />
-            </div>
-
-            <p className={styles.about__text}>{t('about.asociation')}</p>
+          <div className={styles.about__contact}>
+            <Telegram />
+            <Button link={TelegramLink}>{t('about.button')}</Button>
           </div>
-
-          <div className={styles.about__right}>
-            <Title level={TitleLevel.H3} size={TitleSize.SMALL} className={styles.title}>
-              {t('about.title2')}
-            </Title>
-
-            <p className={styles.about__text}>{t('about.fact1')}</p>
-
-            <p className={styles.about__text}>{t('about.fact2')}</p>
-
-            <ul className={`${styles.about__text} ${styles.about__list}`}>
+          <div className={styles.about__description}>
+            <p>{t('about.fact1')}</p>
+            <p>{t('about.fact2')}</p>
+            <ul className={styles.about__list}>
               {t('about.fact2List', { returnObjects: true }).map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
-
-            <p className={styles.about__text}>{t('about.fact3')}</p>
+            <p>{t('about.fact3')}</p>
+            <p>{t('about.fact4')}</p>
           </div>
         </div>
       </Container>
-    </section>
+    </Element>
   );
 }
 
