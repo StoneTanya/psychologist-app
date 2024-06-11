@@ -14,13 +14,35 @@
 }
 
 .header__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 90% 1fr;
+  gap: 1rem;
   align-items: center;
-  justify-content: center;
   padding: 40px 0 20px 0;
 
   @media (max-width: 650px) {
     padding: 0;
-    justify-content: end;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.button__lang {
+  border-radius: 50%;
+  padding: 1rem 1rem;
+  margin: 1rem 0.2rem;
+  font-size: 1.2rem;
+
+  @media (max-width: 650px) {
+    font-size: 0.9rem;
+  }
+}
+
+.header__buttons_box {
+  display: flex;
+  justify-content: end;
+
+  @media (max-width: 650px) {
+    order: -1;
   }
 }

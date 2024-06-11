@@ -5,16 +5,12 @@ import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
 
 function NavMobile() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [isOpen, setOpen] = useState(false);
 
   const ref = useRef(null);
 
-  // смена языка
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
   const navList = t('nav.links', { returnObjects: true });
 
   const useOnClickOutside = (ref, handler) => {
@@ -75,8 +71,6 @@ function NavMobile() {
               );
             })}
           </ul>
-          <button onClick={() => changeLanguage('en')}>EN</button>
-          <button onClick={() => changeLanguage('ru')}>RU</button>
         </div>
       )}
     </div>
