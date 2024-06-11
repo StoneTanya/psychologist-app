@@ -3,13 +3,17 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Carousel from '../../ui/carousel/carousel';
 
+import styles from './style.module.css';
+
 function ReviewContent({ item }) {
   return (
-    <>
-      <p>{item['review_text']}</p>
-      <p>{item['author_name']}</p>
-      <p>{item['pub_date']}</p>
-    </>
+    <div className={styles.review__wrapper}>
+      <p className={styles.review__text}>{item['review_text']}</p>
+      <div className={styles.review__info}>
+        <p className={styles.review__author}>{item['author_name']}</p>
+        <p className={styles.review__date}>{item['pub_date']}</p>
+      </div>
+    </div>
   );
 }
 
