@@ -1,6 +1,6 @@
 {
   "nav": {
-    "links": ["Who i am", "Consulting", "Payment", "Q&A", "Tests"]
+    "links": ["Who I am", "Consulting", "Payment", "Q&A", "Tests", "Reviews"]
   },
 
   "intro": {
@@ -24,7 +24,7 @@
   },
 
   "about": {
-    "title": "Who i am",
+    "title": "Who I am",
     "button": "Sign up",
     "fact1": "My name is Yana Pavlyuts and I help men and women improve their sexual life. I work in a multimodal approach - a method that combines knowledge from different schools of psychology.",
     "fact2": "  I have received training in International Academy of Sexology in the following programs:",
@@ -103,5 +103,9 @@
       "A sexy portrait (ru)",
       "Sexual attitude scale (ru)"
     ]
+  },
+
+  "reviews": {
+    "title": "Reviews"
   }
 }

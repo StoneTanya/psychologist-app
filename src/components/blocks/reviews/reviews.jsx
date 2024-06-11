@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Carousel from '../../ui/carousel/carousel';
+import { useTranslation } from 'react-i18next';
 
 import styles from './style.module.css';
 
@@ -18,6 +19,7 @@ function ReviewContent({ item }) {
 }
 
 export default function Reviews() {
+  const { t } = useTranslation();
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ export default function Reviews() {
   }, []);
 
   return (
-    <Carousel title="Отзывы" items={reviews}>
+    <Carousel title={t('reviews.title')} items={reviews}>
       <ReviewContent />
     </Carousel>
   );
