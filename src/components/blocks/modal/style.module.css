@@ -74,7 +74,7 @@
 .button__back {
   background-color: var(--white-color);
   &:hover {
-    background: var(--footer-background-color);
+    background: var(--button-hover-color);
   }
 }
 
@@ -84,4 +84,19 @@
 
 .cookie_notification {
   font-size: 1rem;
+}
+
+.lang_buttons__box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 84%;
+}
+
+.button__lang {
+  border-radius: 50%;
+  background-color: var(--highlight-color);
+  padding: 1rem 1rem;
+  margin: 0.3rem 0.2rem;
+  font-size: 1.2rem;
 }

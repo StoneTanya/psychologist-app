@@ -1,19 +1,13 @@
 import NavDesktop from '../../blocks/nav/nav-desktop';
 import NavMobile from '../../blocks/nav/nav-mobile';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { changeLanguage } from '../../../utils/util';
 import Container from '../../ui/container/container';
 import Button from '../../ui/button/button';
 import styles from './style.module.css';
 
 function Header() {
   const [scrollDown, setScrollDown] = useState(false);
-  const { i18n } = useTranslation();
-
-  // смена языка
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
