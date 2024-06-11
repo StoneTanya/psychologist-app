@@ -4,8 +4,8 @@ import Consultation from '../../blocks/consultations/consultations';
 import Payment from '../../blocks/payment/payment';
 import UserForm from '../../blocks/user-form/user-form';
 import TestList from '../../blocks/test-list/test-list';
-import QuestionsSlider from '../../blocks/questions-slider/questions-slider';
-// import styles from './style.module.css';
+import QuestionSlider from '../../blocks/questions-slider/question-slider';
+import Reviews from '../../blocks/reviews/reviews';
 
 function MainPage() {
   return (
@@ -15,8 +15,9 @@ function MainPage() {
       <Consultation />
       <Payment />
       <UserForm />
-      <QuestionsSlider />
+      <QuestionSlider />
       <TestList />
+      <Reviews />
     </>
   );
 }
