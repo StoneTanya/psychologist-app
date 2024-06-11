@@ -1,6 +1,7 @@
 .menu__link {
   color: var(--accent-color);
   text-decoration: none;
+  font-size: 1.5rem;
 
   &:hover {
     cursor: pointer;
@@ -11,6 +12,7 @@
 .menu__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0 40px;
   font-weight: 400;
@@ -20,7 +22,7 @@
 nav::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 85%;
   height: 2px;
   background: var(--accent-color);
   margin: 10px auto 0;
@@ -31,8 +33,8 @@ nav::after {
     display: none;
   }
 }
+
 .nav_mobile {
-  padding-top: 1rem;
   @media (min-width: 650px) {
     display: none;
   }
@@ -42,7 +44,7 @@ nav::after {
   display: fixed;
   position: absolute;
   max-width: 320px;
-  right: 5rem;
+  right: 2rem;
   font-size: var(--text-size-base);
   z-index: 99;
 }

@@ -6,7 +6,7 @@
   "intro": {
     "subtitle": "Yana Pavlyuts",
     "title": "Sex therapist",
-    "alt": "Фотография психолога Яны Павлюц"
+    "alt": "portrait of Yana Pavlyuts"
   },
 
   "modalCheck": {
@@ -14,7 +14,7 @@
       "description": "The information on the website is not intended for visitors under the age of 18. Please confirm your age to access it. Are you 18 years old?",
       "yes": "Yes, I am 18 years old",
       "no": "No, I'm younger",
-      "cookie": "For your convenience, the site uses Cookies - by visiting this resource, you agree to their use."
+      "cookie": "This site uses cookies to improve your experience. By visiting this resource, you consent to their use."
     },
     "forbidden": {
       "title": "I will wait for you later!",
@@ -23,87 +23,85 @@
     }
   },
 
-
   "about": {
     "title": "Who i am",
-    "button": "Записаться",
+    "button": "Sign up",
     "fact1": "My name is Yana Pavlyuts and I help men and women improve their sexual life. I work in a multimodal approach - a method that combines knowledge from different schools of psychology.",
     "fact2": "  I have received training in International Academy of Sexology in the following programs:",
-    "fact2List": ["general sexology", "female sexology", "male sexology"],
+    "fact2List": ["general sexology,", "female sexology,", "male sexology."],
     "fact3": "I have been a member of the Association of Sexologists of the Russian Federation since 2019.",
     "fact4": " I have been in personal therapy for 5 years."
   },
 
   "consultations": {
-    "title": "С какими запросами я могу помочь:",
+    "title": "I can help with the following requests:",
     "lists": {
       "canHelp": [
         [
-          "сложности с возбуждением",
-          "трудности в понимании партнёрши/партнёра и её/его желаний",
-          "сложности в коммуникации на тему секса",
-          " трудности с возбуждением с партнёршой/партнёром",
-          "отсутствие желания, снижение либидо, потеря интереса к партнёру/партнёрше"
+          "difficulties with arousal",
+          "difficulties in understanding the desires of the partner",
+          "communication difficulties on the topic of sex",
+          "arousal difficulties with partner",
+          "lack of desire, decreased libido, loss of interest in partner"
         ],
         [
-          "фантазии и их реализация",
-          "болезненные ощущения во время полового акта",
-          "сложности с достижением оргазма",
-          "сильная тревога перед половым актом",
-          "преждевременное завершение полового акта или замедленный половой акт",
-          "травма сексуального насилия"
+          "fantasies and their realization",
+          "painful sensations during sexual intercourse",
+          "difficulties achieving orgasm",
+          "strong anxiety before sexual intercourse",
+          "premature ejaculation or delayed sexual intercourse",
+          "trauma of sexual violence"
         ]
       ],
 
       "notWork": [
-        ["семейная терапия или консультирование в паре", "детская и подростковая сексология"],
-        ["работа с ярко-выраженными парафилиями (фетишизм, вуайеризм, педофилия, эксгибиционизм)"]
+        ["family therapy or couples counseling", "child and adolescent sexology"],
+        ["working with prominent paraphilias (fetishism, voyeurism, pedophilia, exhibitionism)"]
       ]
     },
-
-    "title2": "С какими запросами не работаю:"
+    "title2": "I do not work with the following requests:"
   },
 
   "payment": {
-    "title": "Стоимость и оплата",
-    "button": "Записаться на консультацию",
-    "euroPrice": "30 euro",
-    "rubPrice": "3 000 рублей",
+    "title": "Payment",
+    "button": "Sign up",
+    "euroPrice": "30 EUR",
+    "rubPrice": "3 000 RUB",
     "RSDPrice": "3 500 RSD",
-    "paymentMethodRSD": "(онлайн Райффайзен банк/оффлайн наличными)",
-    "paymentMethodRUB": "(онлайн Тинькофф/Cбербанк)",
-    "paymentMethodEURO": "(на карту Revolut)",
-    "online": "онлайн (zoom)",
-    "format": "индивидуальная сессия",
-    "duration": "60 минут",
-    "altOnline": "Иконка - наушники для онлайн встречи",
-    "altDuration": "Иконка часы",
-    "altFormat": "Иконка, где два человека друг напротив друга"
+    "paymentMethodRSD": "(online Raiffeisen Bank/offline cash)",
+    "paymentMethodRUB": "(online Tinkoff/Sberbank)",
+    "paymentMethodEURO": "(to Revolut card)",
+    "online": "online (zoom)",
+    "format": "individual session",
+    "duration": "60 minutes",
+    "altOnline": "Icon - headphones for online meeting",
+    "altDuration": "Clock icon",
+    "altFormat": "Two people are depicted opposite each other"
   },
 
   "userForm": {
-    "title": "Вопрос-ответ",
-    "text1": "Здесь вы можете задать свой вопрос.",
-    "text2": "Форма анонимная, но для ответа вам нужно будет указать почту, на которую вы ожидаете ответ.",
-    "text3": "Некоторые ответы я могу публиковать на сайте. Вопрос остается анонимным: без контактов и любой другой персональной информации.",
-    "button": "Задать вопрос",
-    "alt": "Фотография психолога Яны Павлюц"
+    "title": "Q&A",
+    "text1": "Here you can ask your question.",
+    "text2": "The form is anonymous, but to respond, you will need to specify the email address to which you expect a response.",
+    "text3": "I may post some answers on the website. The question remains anonymous: without contacts or any other personal information.",
+    "button": "Ask a question",
+    "alt": "portrait of Yana Pavlyuts"
   },
 
   "questions": {
-    "title": "Ваши вопросы",
-    "question": "Вопрос:",
-    "answer": "Ответ:"
+    "title": "Your questions",
+    "question": "Question:",
+    "answer": "Answer:"
   },
 
   "tests": {
-    "title": "Тесты",
-    "description": "Здесь можно найти ссылки на тесты, которые могут понадобиться вам во время консультаций. Их также можно использовать и для самостоятельной оценки. Для корректной интерпретации я рекомендую разобрать их со специалистом.",
+    "title": "Tests",
+    "description": "Here you can find links to tests that may be needed during consultations. They can also be used for self-assessment. But for the most correct interpretation, I recommend to talk over with a specialist.",
     "links": [
-      "Тест на тревожность",
-      "Тест на алекситимию",
-      "Сексуальный портрет",
-      "Шкала сексуальных установок"
+      "Anxiety Test (ru)",
+      "Alexithymia Test (ru)",
+      "A sexy portrait (ru)",
+      "Sexual attitude scale (ru)"
     ]
   }
 }
