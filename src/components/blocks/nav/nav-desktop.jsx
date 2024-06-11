@@ -4,7 +4,6 @@ import styles from './style.module.css';
 
 function NavDesktop() {
   const { t } = useTranslation();
-
   const navList = t('nav.links', { returnObjects: true });
 
   return (
