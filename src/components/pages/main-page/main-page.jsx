@@ -5,7 +5,7 @@ import Payment from '../../blocks/payment/payment';
 import UserForm from '../../blocks/user-form/user-form';
 import TestList from '../../blocks/test-list/test-list';
 import QuestionSlider from '../../blocks/questions-slider/question-slider';
-import Reviews from '../../blocks/reviews/reviews';
+// import Reviews from '../../blocks/reviews/reviews';
 
 function MainPage() {
   return (
@@ -17,7 +17,7 @@ function MainPage() {
       <UserForm />
       <QuestionSlider />
       <TestList />
-      <Reviews />
+      {/* <Reviews /> */}
     </>
   );
 }

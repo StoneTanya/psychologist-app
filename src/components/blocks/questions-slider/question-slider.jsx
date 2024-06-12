@@ -22,22 +22,28 @@ function QuestionSliderContent({ item }) {
 
 function QuestionSlider() {
   const { t } = useTranslation(['translation', 'questions']);
-  const questionsList = t('questions:questions', { returnObjects: true });
+  const { i18n } = useTranslation();
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    axios.get('https://pavlyuts.pythonanywhere.com/questions/').then((response) =>
-      setQuestions([
-        ...questionsList,
-        ...response.data.map((question) => {
-          return {
-            question: question['question_text'],
-            answers: [question['answer_text']],
-          };
-        }),
-      ])
-    );
-  }, [questionsList]);
+    const questionsList = t('questions:questions', { returnObjects: true });
+
+    axios
+      .get('https://pavlyuts.pythonanywhere.com/questions/', {
+        params: { language: i18n.language },
+      })
+      .then((response) =>
+        setQuestions([
+          ...questionsList,
+          ...response.data.map((question) => {
+            return {
+              question: question['question_text'],
+              answers: [question['answer_text']],
+            };
+          }),
+        ])
+      );
+  }, [t, i18n.language]);
 
   return (
     <Carousel title={t('questions.title')} items={questions}>
