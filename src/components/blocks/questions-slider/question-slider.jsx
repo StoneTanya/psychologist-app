@@ -1,5 +1,7 @@
 import Carousel from '../../ui/carousel/carousel';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function QuestionSliderContent({ item }) {
   const { t } = useTranslation(['translation', 'questions']);
@@ -21,9 +23,24 @@ function QuestionSliderContent({ item }) {
 function QuestionSlider() {
   const { t } = useTranslation(['translation', 'questions']);
   const questionsList = t('questions:questions', { returnObjects: true });
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://pavlyuts.pythonanywhere.com/questions/').then((response) =>
+      setQuestions([
+        ...questionsList,
+        ...response.data.map((question) => {
+          return {
+            question: question['question_text'],
+            answers: [question['answer_text']],
+          };
+        }),
+      ])
+    );
+  }, [questionsList]);
 
   return (
-    <Carousel title={t('questions.title')} items={questionsList}>
+    <Carousel title={t('questions.title')} items={questions}>
       <QuestionSliderContent />
     </Carousel>
   );
