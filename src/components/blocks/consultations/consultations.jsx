@@ -11,7 +11,7 @@ function Consultations() {
   const notWork = t('consultations.lists.notWork', { returnObjects: true });
 
   return (
-    <Element name="Консультации" className={styles.consult}>
+    <Element name="Consultation" className={styles.consult}>
       <Container>
         <Title level={TitleLevel.H2} className={styles.title}>
           {t('consultations.title')}
