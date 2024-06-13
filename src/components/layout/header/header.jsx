@@ -3,6 +3,7 @@ import NavMobile from '../../blocks/nav/nav-mobile';
 import { useEffect, useState } from 'react';
 import Container from '../../ui/container/container';
 import styles from './style.module.css';
+import LangButtons from '../../blocks/lang-toggle/lang-buttons';
 
 function Header() {
   const [scrollDown, setScrollDown] = useState(false);
@@ -31,6 +32,7 @@ function Header() {
         <div className={styles.header__wrapper}>
           <NavDesktop />
           <NavMobile />
+          <LangButtons className={styles.header__buttons_box} />
         </div>
       </Container>
     </header>

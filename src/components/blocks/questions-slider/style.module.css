@@ -1,5 +1,4 @@
 .questions {
-  background-color: var(--base-background-color);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -9,7 +8,7 @@
 }
 
 .card {
-  background-color: var(--white-color);
+  background-color: var(--base-background-color);
   border-radius: var(--border-radius-m);
   padding: var(--space-xl);
   cursor: pointer;

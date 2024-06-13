@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "links": ["Who i am", "Consulting", "Payment", "Q&A", "Tests"]
+  },
+
+  "intro": {
+    "subtitle": "Yana Pavlyuts",
+    "title": "Sex therapist",
+    "alt": "portrait of Yana Pavlyuts"
+  },
+
+  "modalCheck": {
+    "default": {
+      "title": "Are you 18 years old?",
+      "description": "The information on the website is not intended for visitors under the age of 18. Please confirm your age to access it.",
+      "yes": "Yes, I am 18 years old",
+      "no": "No, I'm younger",
+      "cookie": "This site uses cookies to improve your experience. By visiting this resource, you consent to their use."
+    },
+    "forbidden": {
+      "title": "I will wait for you later!",
+      "description": "The website contains information intended only for persons over 18 years old.",
+      "back": "Back"
+    }
+  },
+
+  "about": {
+    "title": "Who i am",
+    "button": "Sign up",
+    "fact1": "My name is Yana Pavlyuts and I help men and women improve their sexual life. I work in a multimodal approach - a method that combines knowledge from different schools of psychology.",
+    "fact2": "  I have received training in International Academy of Sexology in the following programs:",
+    "fact2List": ["general sexology,", "female sexology,", "male sexology."],
+    "fact3": "I have been a member of the Association of Sexologists of the Russian Federation since 2019.",
+    "fact4": " I have been in personal therapy for 5 years."
+  },
+
+  "consultations": {
+    "title": "I can help with the following requests:",
+    "lists": {
+      "canHelp": [
+        [
+          "difficulties with arousal",
+          "difficulties in understanding the desires of the partner",
+          "communication difficulties on the topic of sex",
+          "arousal difficulties with partner",
+          "lack of desire, decreased libido, loss of interest in partner"
+        ],
+        [
+          "fantasies and their realization",
+          "painful sensations during sexual intercourse",
+          "difficulties achieving orgasm",
+          "strong anxiety before sexual intercourse",
+          "premature ejaculation or delayed sexual intercourse",
+          "trauma of sexual violence"
+        ]
+      ],
+
+      "notWork": [
+        ["family therapy or couples counseling", "child and adolescent sexology"],
+        ["working with prominent paraphilias (fetishism, voyeurism, pedophilia, exhibitionism)"]
+      ]
+    },
+    "title2": "I do not work with the following requests:"
+  },
+
+  "payment": {
+    "title": "Payment",
+    "button": "Sign up",
+    "euroPrice": "30 EUR",
+    "rubPrice": "3 000 RUB",
+    "RSDPrice": "3 500 RSD",
+    "paymentMethodRSD": "(online Raiffeisen Bank/offline cash)",
+    "paymentMethodRUB": "(online Tinkoff/Sberbank)",
+    "paymentMethodEURO": "(to Revolut card)",
+    "online": "online (zoom)",
+    "format": "individual session",
+    "duration": "60 minutes",
+    "altOnline": "Icon - headphones for online meeting",
+    "altDuration": "Clock icon",
+    "altFormat": "Two people are depicted opposite each other"
+  },
+
+  "userForm": {
+    "title": "Q&A",
+    "text1": "Here you can ask your question.",
+    "text2": "The form is anonymous, but to respond, you will need to specify the email address to which you expect a response.",
+    "text3": "I may post some answers on the website. The question remains anonymous: without contacts or any other personal information.",
+    "button": "Ask a question",
+    "alt": "portrait of Yana Pavlyuts"
+  },
+
+  "questions": {
+    "title": "Your questions",
+    "question": "Question:",
+    "answer": "Answer:"
+  },
+
+  "tests": {
+    "title": "Tests",
+    "description": "Here you can find links to tests that may be needed during consultations. They can also be used for self-assessment. But for the most correct interpretation, I recommend to talk over with a specialist.",
+    "links": [
+      "Anxiety Test (ru)",
+      "Alexithymia Test (ru)",
+      "A sexy portrait (ru)",
+      "Sexual attitude scale (ru)"
+    ]
+  }
+}

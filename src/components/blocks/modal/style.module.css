@@ -15,7 +15,7 @@
 
 .modal {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 0;
   right: 0;
   margin: auto;
@@ -29,7 +29,7 @@
   width: 85%;
   min-width: 320px;
   max-width: 500px;
-  background-color: var(--modal-background-color);
+  background-color: var(--accent-color);
   padding: 3% 2%;
   z-index: 1000;
   border-radius: 10px;
@@ -45,8 +45,8 @@
 }
 
 .age {
-  top: 8%;
-  left: 13%;
+  top: 5%;
+  left: 5%;
   max-width: 42px;
   max-height: 40px;
   position: absolute;
@@ -68,14 +68,13 @@
   color: var(--black-color);
   font-family: var(--font-family-titles);
   font-weight: bolder;
-
 }
 
 .button__yes,
 .button__back {
   background-color: var(--white-color);
   &:hover {
-    background: var(--footer-background-color);
+    background: var(--button-hover-color);
   }
 }
 
@@ -85,4 +84,19 @@
 
 .cookie_notification {
   font-size: 1rem;
+}
+
+.lang_buttons__box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 84%;
+}
+
+.lang_buttons__box button {
+  border-radius: 50%;
+  background-color: var(--highlight-color);
+  padding: 1rem 1rem;
+  margin: 0.3rem 0.2rem;
+  font-size: 1.2rem;
 }

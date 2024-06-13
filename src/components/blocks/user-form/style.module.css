@@ -1,3 +1,7 @@
+.questions__form {
+  background-color: var(--base-background-color);
+}
+
 .form__section {
   display: flex;
   flex-wrap: wrap;

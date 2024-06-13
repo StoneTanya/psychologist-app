@@ -1,41 +1,36 @@
 import Title from '../../ui/title/title';
 import Container from '../../ui/container/container';
-import { TitleSize, TitleLevel } from '../../../utils/consts';
+import { TitleLevel, TelegramLink } from '../../../utils/consts';
 import { Element } from 'react-scroll';
-
-import aboutLogo from '../../../assets/img/colorsex.png';
+import { useTranslation } from 'react-i18next';
+import Telegram from '../../ui/telegram/telegram';
+import Button from '../../ui/button/button';
 import styles from './style.module.css';
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <Element name="Обо мне" className={styles.about}>
       <Container>
-      <Title level={TitleLevel.H2}>ОБО МНЕ</Title>
+        <Title level={TitleLevel.H2} className={styles.about__title}>
+          {t('about.title')}
+        </Title>
         <div className={styles.about__wrapper}>
-          <div className={styles.about__left}>
-            <div className={styles.about__img}>
-              <img src={aboutLogo} alt="Логотип Ассоциации сексологов РФ" />
-            </div>
-            <p className={styles.about__text}>
-              Состою в Ассоциации сексологов Российской Федерации
-            </p>
+          <div className={styles.about__contact}>
+            <Telegram />
+            <Button link={TelegramLink}>{t('about.button')}</Button>
           </div>
-          <div className={styles.about__right}>
-            <Title level={TitleLevel.H3} size={TitleSize.SMALL}>
-              МЕНЯ ЗОВУТ ЯНА ПАВЛЮЦ
-            </Title>
-            <p className={styles.about__text}>
-              Консультирую мужчин и женщин по вопросам, связанным с качеством сексуальной жизни.
-            </p>
-            <p className={styles.about__text}>
-              Выпускница Международной академии сексологии по программам:
-            </p>
-            <ul className={`${styles.about__text} ${styles.about__list}`}>
-              <li>общая сексология,</li>
-              <li>женская сексология,</li>
-              <li>мужская сексология.</li>
+          <div className={styles.about__description}>
+            <p>{t('about.fact1')}</p>
+            <p>{t('about.fact2')}</p>
+            <ul className={styles.about__list}>
+              {t('about.fact2List', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-            <p className={styles.about__text}>В личной терапии с 2019 года.</p>
+            <p>{t('about.fact3')}</p>
+            <p>{t('about.fact4')}</p>
           </div>
         </div>
       </Container>

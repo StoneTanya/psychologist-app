@@ -8,6 +8,8 @@
 
   @media (max-width: 800px) {
     --space-indent: var(--space-l);
+    padding-top: calc(3 * var(--space-s));
+    padding-bottom: calc(3 * var(--space-s));
   }
 }
 
@@ -40,11 +42,11 @@
 }
 
 .block_fill {
-  background-color: var(--block-background-color);
+  background-color: var(--white-color);
 }
 
 .block_outlined {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--highlight-color);
 }
 
 .item:not(:last-child) {

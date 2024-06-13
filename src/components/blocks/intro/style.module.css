@@ -1,5 +1,9 @@
 .intro {
-background-color: var(--base-background-color);
+  background-color: var(--base-background-color);
+}
+
+.intro__title {
+  font-weight: 400;
 }
 
 .intro__wrapper {
