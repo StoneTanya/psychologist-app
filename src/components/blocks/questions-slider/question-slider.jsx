@@ -2,7 +2,6 @@ import Carousel from '../../ui/carousel/carousel';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Element } from 'react-scroll';
 
 function QuestionSliderContent({ item }) {
   const { t } = useTranslation(['translation', 'questions']);
@@ -47,11 +46,9 @@ function QuestionSlider() {
   }, [t, i18n.language]);
 
   return (
-    <Element name="Q&A">
-      <Carousel title={t('questions.title')} items={questions}>
-        <QuestionSliderContent />
-      </Carousel>
-    </Element>
+    <Carousel title={t('questions.title')} items={questions}>
+      <QuestionSliderContent />
+    </Carousel>
   );
 }
 
