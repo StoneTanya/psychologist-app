@@ -93,7 +93,7 @@
   left: 84%;
 }
 
-.button__lang {
+.lang_buttons__box button {
   border-radius: 50%;
   background-color: var(--highlight-color);
   padding: 1rem 1rem;
