@@ -11,7 +11,7 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <Element name="Обо мне" className={styles.about}>
+    <Element name="About Me" className={styles.about}>
       <Container>
         <Title level={TitleLevel.H2} className={styles.about__title}>
           {t('about.title')}

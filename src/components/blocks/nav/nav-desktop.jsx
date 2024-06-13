@@ -9,10 +9,10 @@ function NavDesktop() {
   return (
     <nav className={styles.nav__desktop}>
       <ul className={styles.menu__list}>
-        {navList.map((nav, navId) => (
-          <li key={navId} className={styles.menu__item}>
-            <Link to={nav} smooth={true} duration={500} className={styles.menu__link}>
-              {nav}
+        {navList.map((nav) => (
+          <li key={nav.id} className={styles.menu__item}>
+            <Link to={nav.id} smooth={true} duration={500} className={styles.menu__link}>
+              {nav.title}
             </Link>
           </li>
         ))}

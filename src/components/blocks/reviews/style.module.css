@@ -1,0 +1,17 @@
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.review__info {
+  margin-top: auto;
+}
+
+.review__author,
+.review__date {
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+}

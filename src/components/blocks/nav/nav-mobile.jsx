@@ -6,11 +6,8 @@ import styles from './style.module.css';
 
 function NavMobile() {
   const { t } = useTranslation();
-
   const [isOpen, setOpen] = useState(false);
-
   const ref = useRef(null);
-
   const navList = t('nav.links', { returnObjects: true });
 
   const useOnClickOutside = (ref, handler) => {
@@ -61,11 +58,11 @@ function NavMobile() {
       {isOpen && (
         <div className={styles.nav_mobile__wrapper}>
           <ul className={styles.nav_mobile__list}>
-            {navList.map((nav, navId) => {
+            {navList.map((nav) => {
               return (
-                <li key={navId} className={styles.nav_mobile__item}>
-                  <a onClick={() => scroll(nav)}>
-                    <span>{nav}</span>
+                <li key={nav.id} className={styles.nav_mobile__item}>
+                  <a onClick={() => scroll(nav.id)}>
+                    <span>{nav.title}</span>
                   </a>
                 </li>
               );

@@ -13,7 +13,7 @@ function Payment() {
   const { t } = useTranslation();
 
   return (
-    <Element name="Оплата" className={styles.payment}>
+    <Element name="Payment" className={styles.payment}>
       <Container>
         <Title level={TitleLevel.H2}>{t('payment.title')}</Title>
         <div className={styles.payment__wrapper}>

@@ -12,7 +12,7 @@ function TestList() {
   const { t } = useTranslation();
 
   return (
-    <Element name="Тесты" className={styles.tests}>
+    <Element name="Tests" className={styles.tests}>
       <Container>
         <Title level={TitleLevel.H2}>{t('tests.title')}</Title>
         <p>{t('tests.description')}</p>
