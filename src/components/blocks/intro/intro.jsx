@@ -13,7 +13,7 @@ function Intro() {
       <Container>
         <div className={styles.intro__wrapper}>
           <div className={styles.intro__img}>
-            <img src={headerPhoto} alt={t('intro.alt')} />
+            <img src={headerPhoto} alt={t('intro.alt')} loading='lazy' />
           </div>
           <div className={styles.intro__content}>
             <Title level={TitleLevel.H3} size={TitleSize.SMALL}>

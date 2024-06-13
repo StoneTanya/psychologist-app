@@ -7,7 +7,7 @@ function ModalDefault({ isUnder, isOver }) {
 
   return (
     <>
-      <span className={styles.modal__title}>Вам есть 18 лет?</span>
+      <span className={styles.modal__title}>{t('modalCheck.default.title')}</span>
       <p>{t('modalCheck.default.description')}</p>
       <Button className={styles.button__yes} handler={() => isOver()}>
         {t('modalCheck.default.yes')}

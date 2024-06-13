@@ -1,10 +1,9 @@
 import NavDesktop from '../../blocks/nav/nav-desktop';
 import NavMobile from '../../blocks/nav/nav-mobile';
 import { useEffect, useState } from 'react';
-import { changeLanguage } from '../../../utils/util';
 import Container from '../../ui/container/container';
-import Button from '../../ui/button/button';
 import styles from './style.module.css';
+import LangButtons from '../../blocks/lang-toggle/lang-buttons';
 
 function Header() {
   const [scrollDown, setScrollDown] = useState(false);
@@ -33,18 +32,7 @@ function Header() {
         <div className={styles.header__wrapper}>
           <NavDesktop />
           <NavMobile />
-          <div className={styles.header__buttons_box}>
-            <Button
-              handler={() => changeLanguage('ru')}
-              className={styles.button__lang}
-              data={'active'}
-            >
-              RU
-            </Button>
-            <Button handler={() => changeLanguage('en')} className={styles.button__lang}>
-              EN
-            </Button>
-          </div>
+          <LangButtons className={styles.header__buttons_box} />
         </div>
       </Container>
     </header>
