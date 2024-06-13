@@ -9,8 +9,11 @@
   color: var(--text-color-base);
   margin-bottom: 2.5rem;
   &:hover {
-    color: var(--accent-color);
+    color: var(--highlight-color);
     text-decoration: underline;
+  }
+  &:hover .telegram__icon {
+    fill: var(--highlight-color);
   }
 }
 

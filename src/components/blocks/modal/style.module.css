@@ -94,8 +94,6 @@
 }
 
 .lang_buttons__box button {
-  border-radius: 50%;
-  background-color: var(--highlight-color);
   padding: 1rem 1rem;
   margin: 0.3rem 0.2rem;
   font-size: 1.2rem;

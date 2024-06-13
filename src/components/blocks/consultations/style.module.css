@@ -1,8 +1,8 @@
 .consult {
   font-size: var(--text-size-base);
   background-color: var(--base-background-color);
-  padding-top: calc(2 * var(--space-xxl));
-  padding-bottom: calc(2 * var(--space-xxl));
+  padding-top: calc(2 * var(--space-l));
+  padding-bottom: calc(2 * var(--space-l));
 
   --space-indent: calc(2 * var(--space-l));
 
