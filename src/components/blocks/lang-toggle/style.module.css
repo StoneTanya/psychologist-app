@@ -8,10 +8,10 @@
   }
 }
 
-/* .button__active {
-  background-color: var(--accent-color);
+.button__active {
+  background-color: var(--button-hover-color);
   color: var(--white-color);
-} */
+}
 
 .header__buttons_box {
   display: flex;

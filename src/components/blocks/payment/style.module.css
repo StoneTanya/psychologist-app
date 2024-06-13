@@ -1,6 +1,6 @@
 .payment {
-  padding-top: calc(2 * var(--space-xxl));
-  padding-bottom: calc(2 * var(--space-xxl));
+  padding-top: calc(2 * var(--space-l));
+  padding-bottom: calc(2 * var(--space-l));
 
   @media (max-width: 600px) {
     padding-top: calc(2 * var(--space-m));
@@ -74,9 +74,6 @@
 
 .payment__button {
   margin: 0 auto;
-  max-width: 280px;
-
-  @media (min-width: 451px) {
-    max-width: 380px;
-  }
+  width: fit-content;
+  max-width: 100%;
 }

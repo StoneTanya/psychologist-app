@@ -17,13 +17,9 @@ function UserForm() {
           <div className={styles.form__section}>
             <div className={styles.form__content}>
               <Title level={TitleLevel.H2}>{t('userForm.title')}</Title>
-
-              <p>
-                {t('userForm.text1')}
-                <br /> {t('userForm.text2')}
-              </p>
+              <p>{t('userForm.text1')}</p>
+              <p> {t('userForm.text2')}</p>
               <p>{t('userForm.text3')}</p>
-
               <Button link={FormLink} className={styles.form__link}>
                 {t('userForm.button')}
               </Button>

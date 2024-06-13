@@ -49,10 +49,22 @@
 
   .form__content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form__content p {
+    margin: 1rem 0;
   }
 
   .form__link {
-    min-width: 100%;
+    margin: 2rem auto;
+    max-width: 280px;
+
+    @media (min-width: 451px) {
+      max-width: 380px;
+    }
   }
 
   .form__img {

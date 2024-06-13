@@ -1,8 +1,8 @@
 .tests {
   font-size: var(--text-size-base);
   background-color: var(--white-color);
-  padding-top: calc(2 * var(--space-xxl));
-  padding-bottom: calc(2 * var(--space-xxl));
+  padding-top: calc(2 * var(--space-l));
+  padding-bottom: calc(2 * var(--space-l));
   @media (max-width: 800px) {
     padding-top: calc(3 * var(--space-s));
     padding-bottom: calc(3 * var(--space-s));

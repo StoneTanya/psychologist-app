@@ -1,11 +1,15 @@
 .menu__link {
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
 
   &:hover {
     cursor: pointer;
     color: var(--highlight-color);
+  }
+  @media (max-width: 769px) {
+    font-size: 1.7rem;
   }
 }
 

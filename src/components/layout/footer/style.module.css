@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 5rem;
 }
 
 .footer__wrapper p {
@@ -17,9 +18,9 @@
 .footer__createdby {
   text-decoration: none;
   color: var(--text-color-base);
-  
+
   &:hover {
-    color: var(--accent-color);
+    color: var(--highlight-color);
     text-decoration: underline;
   }
 }
