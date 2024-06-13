@@ -27,7 +27,7 @@ function UserForm() {
             </Button>
           </div>
           <div className={styles.form__img}>
-            <img src={userFormPhoto} alt={t('userForm.alt')} />
+            <img src={userFormPhoto} alt={t('userForm.alt')} loading="lazy" />
           </div>
         </div>
       </Container>
