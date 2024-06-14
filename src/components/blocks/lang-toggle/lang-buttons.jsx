@@ -1,50 +1,21 @@
 import Button from '../../ui/button/button';
 import styles from './style.module.css';
-import i18n from '../../../i18n';
-import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function LangButtons({ className = '' }) {
-  const [isActiveButtonRU, setIsActiveButtonRU] = useState(true);
-  const [isActiveButtonEN, setIsActiveButtonEN] = useState(false);
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
-
-  const selectRUButton = () => {
-    setIsActiveButtonRU(!isActiveButtonRU);
-    setIsActiveButtonEN(!isActiveButtonEN);
-  };
-
-  const selectENButton = () => {
-    setIsActiveButtonEN(!isActiveButtonEN);
-    setIsActiveButtonRU(!isActiveButtonRU);
-  };
-
-  const handleClickRU = () => {
-    selectRUButton();
-    changeLanguage('ru');
-  };
-
-  const handleClickEN = () => {
-    selectENButton();
-    changeLanguage('en');
-  };
+  const { i18n } = useTranslation();
 
   return (
     <div className={className}>
-      <Button
-        handler={() => handleClickRU()}
-        className={`${styles.button__lang} ${isActiveButtonRU ? styles.button__active : ''}`}
-      >
-        RU
-      </Button>
-      <Button
-        handler={() => handleClickEN()}
-        className={`${styles.button__lang} ${isActiveButtonEN ? styles.button__active : ''}`}
-      >
-        EN
-      </Button>
+      {i18n.options.locales.toReversed().map((locale) => (
+        <Button
+          key={locale}
+          handler={() => i18n.changeLanguage(locale)}
+          className={`${styles.button__lang} ${i18n.language === locale ? styles.button__active : ''}`}
+        >
+          {locale}
+        </Button>
+      ))}
     </div>
   );
 }
