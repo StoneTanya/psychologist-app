@@ -19,7 +19,9 @@ function About() {
         <div className={styles.about__wrapper}>
           <div className={styles.about__contact}>
             <Telegram />
-            <Button link={TelegramLink}>{t('about.button')}</Button>
+            <Button link={TelegramLink} className={styles.about__button}>
+              {t('about.button')}
+            </Button>
           </div>
           <div className={styles.about__description}>
             <p>{t('about.fact1')}</p>

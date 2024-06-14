@@ -10,13 +10,14 @@
 
 .about__wrapper {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  gap: 5%;
+  grid-template-columns: 20vw 1fr;
+  gap: 3%;
   margin-top: 4rem;
 }
 
 .about__contact {
   align-content: center;
+  justify-self: start;
 }
 
 .about__description {
@@ -70,4 +71,10 @@
 
 .title {
   text-transform: uppercase;
+}
+
+.about__button {
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 100%;
 }
