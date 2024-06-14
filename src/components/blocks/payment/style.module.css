@@ -73,7 +73,7 @@
 }
 
 .payment__button {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: fit-content;
   max-width: 100%;
 }
