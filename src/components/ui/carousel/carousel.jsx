@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import Container from '../container/container';
 import Title from '../title/title';
-import { TitleLevel, TitleSize } from '../../../utils/consts';
+import { TitleLevel } from '../../../utils/consts';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -18,7 +18,7 @@ function Carousel({ title, items, children }) {
   return (
     <div className={styles.questions}>
       <Container>
-        <Title size={TitleSize.SMALL} level={TitleLevel.H2} className={styles.title}>
+        <Title level={TitleLevel.H2} className={styles.title}>
           {title}
         </Title>
 
