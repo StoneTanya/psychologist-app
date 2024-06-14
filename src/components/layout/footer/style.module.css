@@ -9,10 +9,11 @@
   align-items: center;
   gap: 1rem;
 }
-
-@-moz-document url-prefix() {
-  .footer__wrapper {
-    padding-bottom: 5rem;
+@media (max-width: 420px) {
+  @-moz-document url-prefix() {
+    .footer__wrapper {
+      padding-bottom: 5rem;
+    }
   }
 }
 
