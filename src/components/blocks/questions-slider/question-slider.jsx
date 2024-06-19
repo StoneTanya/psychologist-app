@@ -26,24 +26,21 @@ function QuestionSlider() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    const questionsList = t('questions:questions', { returnObjects: true });
-
     axios
       .get('https://pavlyuts.pythonanywhere.com/questions/', {
         params: { language: i18n.language },
       })
       .then((response) =>
-        setQuestions([
-          ...questionsList,
-          ...response.data.map((question) => {
+        setQuestions(
+          response.data.map((question) => {
             return {
               question: question['question_text'],
-              answers: [question['answer_text']],
+              answers: question['answer_text'].split('\n'),
             };
-          }),
-        ])
+          })
+        )
       );
-  }, [t, i18n.language]);
+  }, [i18n.language]);
 
   return (
     <Carousel title={t('questions.title')} items={questions}>
