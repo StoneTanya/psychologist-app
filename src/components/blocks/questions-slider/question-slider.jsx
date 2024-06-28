@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function QuestionSliderContent({ item }) {
-  const { t } = useTranslation(['translation', 'questions']);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -21,8 +21,7 @@ function QuestionSliderContent({ item }) {
 }
 
 function QuestionSlider() {
-  const { t } = useTranslation(['translation', 'questions']);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
